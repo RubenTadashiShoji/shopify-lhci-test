@@ -8,6 +8,32 @@
  * ------------------------------------------------------------
  */{
   "sections": {
+    "slideshow_section": {
+      "type": "slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "slide_height": "medium",
+        "section_width": "full-width",
+        "color_scheme": "primary",
+        "slideshow_controls_style": "dots",
+        "icons_style": "arrows_large",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      },
+      "blocks": {
+        "slide_1": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "",
+            "image_mobile": "",
+            "horizontal_alignment_flex_direction_column": "center"
+          }
+        }
+      },
+      "block_order": ["slide_1"]
+    },
     "hero_rhMed7": {
       "type": "hero",
       "blocks": {
@@ -944,6 +970,7 @@
     }
   },
   "order": [
+    "slideshow_section",
     "hero_rhMed7",
     "media_with_content_GRV6iJ",
     "collection_list_mcURmi",
