@@ -342,10 +342,22 @@
         {
           "value": "var(--color-primary)",
           "label": "t:options.link"
+        },
+        { 
+          "value": "custom", 
+          "label": "Custom HEX" 
         }
       ],
       "default": "var(--color-foreground)",
       "visible_if": "{{ block.settings.type_preset != 'rte' }}"
+    },
+    {
+      "type": "text",
+      "id": "custom_color_hex",
+      "label": "Custom HEX Color",
+      "placeholder": "#ff0000",
+      "default": "#000000",
+      "visible_if": "{{ block.settings.color == 'custom' }}"
     },
     {
       "type": "header",
