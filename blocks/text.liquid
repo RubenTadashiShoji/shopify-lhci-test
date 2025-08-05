@@ -62,53 +62,6 @@
     },
     {
       "type": "header",
-      "content": "Font Family"
-    },
-    {
-      "type": "select",
-      "id": "font_family",
-      "label": "Font family",
-      "options": [
-        {
-          "value": "arial",
-          "label": "Arial"
-        },
-        {
-          "value": "georgia",
-          "label": "Georgia"
-        },
-        {
-          "value": "courier",
-          "label": "Courier New"
-        },
-        {
-          "value": "verdana",
-          "label": "Verdana"
-        },
-        {
-          "value": "times",
-          "label": "Times New Roman"
-        },
-        {
-          "value": "trebuchet",
-          "label": "Trebuchet MS"
-        },
-        {
-          "value": "tahoma",
-          "label": "Tahoma"
-        },
-        {
-          "value": "Bebas",
-          "label": "Bebas"
-        },
-        {
-          "value": "Didot HTF Light Italic",
-          "label": "Didot HTF Light Italic"
-        }
-      ]
-    },    
-    {
-      "type": "header",
       "content": "t:content.typography"
     },
     {
@@ -155,6 +108,67 @@
       ],
       "default": "rte",
       "info": "t:info.edit_presets_in_theme_settings"
+    },
+    {
+      "type": "select",
+      "id": "font",
+      "label": "t:settings.font",
+      "options": [
+        {
+          "value": "var(--font-body--family)",
+          "label": "t:options.body"
+        },
+        {
+          "value": "var(--font-subheading--family)",
+          "label": "t:options.subheading"
+        },
+        {
+          "value": "var(--font-heading--family)",
+          "label": "t:options.heading"
+        },
+        {
+          "value": "var(--font-accent--family)",
+          "label": "t:options.accent"
+        },
+        {
+          "value": "arial",
+          "label": "Arial"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "courier",
+          "label": "Courier New"
+        },
+        {
+          "value": "verdana",
+          "label": "Verdana"
+        },
+        {
+          "value": "times",
+          "label": "Times New Roman"
+        },
+        {
+          "value": "trebuchet",
+          "label": "Trebuchet MS"
+        },
+        {
+          "value": "tahoma",
+          "label": "Tahoma"
+        },
+        {
+          "value": "Bebas",
+          "label": "Bebas"
+        },
+        {
+          "value": "Didot HTF Light Italic",
+          "label": "Didot HTF Light Italic"
+        }
+      ],
+      "default": "var(--font-body--family)",
+      "visible_if": "{{ block.settings.type_preset == 'custom' }}"
     },
     {
       "type": "select",
