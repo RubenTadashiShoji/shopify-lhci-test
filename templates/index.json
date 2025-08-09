@@ -130,9 +130,110 @@
     },
     "category_showcase": {
       "type": "category-showcase",
-      "blocks": {},
+      "blocks": {
+        "text_bRcxVT": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>SHOP BY CATEGORY</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "custom_color_hex": "#000000",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          }
+        },
+        "category_A8ThPr": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/CGU25804L_EMERALD_BLACK_CROP.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_hAppfd": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/BSJ24628L_ROYAL_NAVY_CROP.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_xBYcPP": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/BOS25450MD_BLACK_CROP.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_3pYPNG": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/BOS22808LX_BLACK_IVORY_CROP.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_qGDGJR": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/BOS25800L_NAVY_CROP.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_RyK3cA": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/CJB25705L_GOLD_BLACK_FRONT.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        }
+      },
+      "block_order": [
+        "text_bRcxVT",
+        "category_A8ThPr",
+        "category_hAppfd",
+        "category_xBYcPP",
+        "category_3pYPNG",
+        "category_qGDGJR",
+        "category_RyK3cA"
+      ],
       "settings": {
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "columns": 4,
         "mobile_columns": "2",
         "columns_gap": 8,
@@ -144,7 +245,7 @@
         "padding-block-start": 24,
         "padding-block-end": 24
       }
-    },    
+    },
     "hero_rhMed7": {
       "type": "hero",
       "blocks": {
