@@ -128,6 +128,23 @@
         "padding-block-end": 0
       }
     },
+    "category_showcase": {
+      "type": "category-showcase",
+      "blocks": {},
+      "settings": {
+        "layout_type": "grid",
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 8,
+        "rows_gap": 8,
+        "mobile_card_size": "60cqw",
+        "section_width": "page-width",
+        "gap": 12,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 24,
+        "padding-block-end": 24
+      }
+    },    
     "hero_rhMed7": {
       "type": "hero",
       "blocks": {
@@ -1253,6 +1270,7 @@
   },
   "order": [
     "slideshow_section",
+    "category_showcase",
     "hero_rhMed7",
     "media_with_content_GRV6iJ",
     "collection_list_mcURmi",
