@@ -42,7 +42,7 @@
         {% if is_logged_in %}
             <a class="btn btn-x-v3" href="/customer/account/index/target/rewardpoints">CHECK MY POINTS</a>
         {% else %}
-            <a class="btn btn-x-v3" href="/customer/account/create">JOIN</a>
+            <a class="btn btn-x-v3" href="{{ routes.account_login_url }}">JOIN</a>
             <br><br>
             <div>
                 Already have an account?
