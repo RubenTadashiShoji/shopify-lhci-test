@@ -522,9 +522,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 40,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 15,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -535,6 +535,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/Miami_YV25330L_02.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -566,7 +567,7 @@
             "text_wxrb4W": {
               "type": "text",
               "settings": {
-                "text": "<h3>BRIDAL</h3>",
+                "text": "<h3><strong>BRIDAL</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -592,7 +593,7 @@
             "button_XRqzQm": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "SHOP NOW",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
@@ -620,9 +621,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 63,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 15,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -633,6 +634,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/Miami_SCHB24686S_01_27a72d21-d2ee-4e44-b626-17d95abab2ab.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -664,7 +666,7 @@
             "text_cHG94V": {
               "type": "text",
               "settings": {
-                "text": "<h3>SHO</h3>",
+                "text": "<h3><strong>SHO</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -690,7 +692,7 @@
             "button_BEfVxK": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "SHOP NOW",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
