@@ -316,6 +316,7 @@
         "logo_38acff",
         "button_3cL8kq"
       ],
+      "disabled": true,
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "video",
@@ -486,6 +487,7 @@
       "block_order": [
         "group_mbeExm"
       ],
+      "disabled": true,
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [],
@@ -521,7 +523,7 @@
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "space-between",
             "gap": 40,
             "width": "fill",
             "custom_width": 100,
@@ -886,6 +888,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.media_with_text",
       "settings": {
         "media_position": "left",
@@ -1217,7 +1220,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "fill",
@@ -1573,6 +1576,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Editorial",
       "settings": {
         "media_position": "right",
