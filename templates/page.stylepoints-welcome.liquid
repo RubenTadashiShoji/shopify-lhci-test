@@ -1,3 +1,9 @@
+{% if customer.has_account %}
+    'has account'
+{% else %}
+    'not has account'
+{% endif %}
+
 <div class="reward-points-landing-header section-arrow-down">
     <div class="reward-points-landing-title-wrapper">
         <div class="line-1">welcome to</div>
@@ -35,7 +41,6 @@
             </div>
         </div>
 
-        <?php /** TODO: make this dynamic based on customer logged-in status */ ?>
         <?php if ($isLoggedIn) { ?>
             <a class="btn btn-x-v3" href="<?= $block->getBaseUrl() ?>customer/account/index/target/rewardpoints">CHECK MY POINTS</a>
         <?php } else { ?>
