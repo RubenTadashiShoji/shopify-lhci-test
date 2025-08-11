@@ -134,11 +134,11 @@
         "text_bRcxVT": {
           "type": "text",
           "settings": {
-            "text": "<h1>SHOP BY CATEGORY</h1>",
+            "text": "<h1><strong>SHOP BY CATEGORY</strong></h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
