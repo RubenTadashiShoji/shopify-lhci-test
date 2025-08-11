@@ -41,9 +41,9 @@
             </div>
         </div>
 
-        <?php if ($isLoggedIn) { ?>
+        {% comment %} <?php if ($isLoggedIn) { ?> {% endcomment %}
             <a class="btn btn-x-v3" href="<?= $block->getBaseUrl() ?>customer/account/index/target/rewardpoints">CHECK MY POINTS</a>
-        <?php } else { ?>
+        {% comment %} <?php } else { ?> {% endcomment %}
             <a class="btn btn-x-v3" href="<?= $block->getBaseUrl() ?>customer/account/create">JOIN</a>
             <br><br>
             <div>
@@ -54,7 +54,7 @@
                 </a>
             </span>
             </div>
-        <?php } ?>
+        {% comment %} <?php } ?> {% endcomment %}
 
         <br><br>
 
