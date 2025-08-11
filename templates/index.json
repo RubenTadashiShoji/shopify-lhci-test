@@ -134,13 +134,13 @@
         "text_bRcxVT": {
           "type": "text",
           "settings": {
-            "text": "<h1><strong>SHOP BY CATEGORY</strong></h1>",
+            "text": "<h1>SHOP BY CATEGORY</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1.5rem",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -151,7 +151,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 26,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           }
@@ -160,7 +160,7 @@
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/CGU25804L_EMERALD_BLACK_CROP.jpg",
-            "title": "Evening",
+            "title": "EVENING",
             "subtitle": "",
             "link": "",
             "open_in_new_tab": false,
@@ -221,6 +221,17 @@
             "open_in_new_tab": false,
             "image_ratio": "portrait"
           }
+        },
+        "category_9w7K9n": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/CIN25509L_CHERRY_NUDE_FRONT.jpg",
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
         }
       },
       "block_order": [
@@ -230,10 +241,11 @@
         "category_xBYcPP",
         "category_3pYPNG",
         "category_qGDGJR",
-        "category_RyK3cA"
+        "category_RyK3cA",
+        "category_9w7K9n"
       ],
       "settings": {
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "columns": 4,
         "mobile_columns": "2",
         "columns_gap": 8,
