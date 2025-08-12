@@ -4,6 +4,7 @@
 	 padding-bottom: 34px;
 }
  .section-arrow-down:after {
+     content: '';
 	 position: absolute;
 	 top: 100%;
 	 left: 0;
