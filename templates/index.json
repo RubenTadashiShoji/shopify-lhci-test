@@ -16,6 +16,8 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
+            "image_1": "shopify://shop_images/test-d.jpg",
+            "image_mobile": "shopify://shop_images/test-m.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -316,6 +318,7 @@
         "logo_38acff",
         "button_3cL8kq"
       ],
+      "disabled": true,
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "video",
@@ -486,6 +489,7 @@
       "block_order": [
         "group_mbeExm"
       ],
+      "disabled": true,
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [],
@@ -520,9 +524,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 40,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 15,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -532,10 +536,12 @@
             "inherit_color_scheme": false,
             "color_scheme": "scheme-5",
             "background_media": "image",
+            "video": "shopify://files/videos/Miami_YV25330L.mp4",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/Miami_YV25330L_02.jpg",
             "background_image_position": "cover",
             "border": "none",
-            "border_width": 1,
+            "border_width": 2,
             "border_opacity": 100,
             "border_radius": 0,
             "toggle_overlay": false,
@@ -564,7 +570,7 @@
             "text_wxrb4W": {
               "type": "text",
               "settings": {
-                "text": "<h3>BRIDAL</h3>",
+                "text": "<h3><strong>BRIDAL</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -590,7 +596,7 @@
             "button_XRqzQm": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "SHOP NOW",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
@@ -618,9 +624,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 63,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 15,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -629,11 +635,13 @@
             "custom_height": 100,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-5",
-            "background_media": "image",
+            "background_media": "video",
+            "video": "shopify://files/videos/Miami_SCHB24686S.mp4",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/Miami_SCHB24686S_01_27a72d21-d2ee-4e44-b626-17d95abab2ab.jpg",
             "background_image_position": "cover",
             "border": "none",
-            "border_width": 1,
+            "border_width": 2,
             "border_opacity": 100,
             "border_radius": 0,
             "toggle_overlay": false,
@@ -662,7 +670,7 @@
             "text_cHG94V": {
               "type": "text",
               "settings": {
-                "text": "<h3>SHO</h3>",
+                "text": "<h3><strong>SHO</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -688,7 +696,7 @@
             "button_BEfVxK": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "SHOP NOW",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
@@ -886,6 +894,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.media_with_text",
       "settings": {
         "media_position": "left",
@@ -1217,7 +1226,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "fill",
@@ -1573,6 +1582,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Editorial",
       "settings": {
         "media_position": "right",
