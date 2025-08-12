@@ -1,3 +1,8 @@
+<head>
+    {{ 'page-stylepoints-welcome.css' | asset_url | stylesheet_tag }}
+</head>
+
+
 {% if customer %}
     {% assign is_logged_in = true %}
 {% endif %}
