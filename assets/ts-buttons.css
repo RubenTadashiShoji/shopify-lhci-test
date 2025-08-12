@@ -128,3 +128,15 @@
 	 border-color: transparent transparent transparent black;
 }
  
+.btn {
+    font-weight: 300;
+    min-height: 28px;
+    padding: .4em 1.5em .25em;
+    background: #000 !important;
+    font-size: 1.05rem;
+    line-height: 1.25em;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 0;
+}
