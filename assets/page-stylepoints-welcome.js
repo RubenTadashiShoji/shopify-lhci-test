@@ -1,3 +1,5 @@
+import { jQuery } from '@jquery';
+
 // require(['jquery'], function(jQuery) {
 
     $(".reward-points-accordion").on("click",function() {
