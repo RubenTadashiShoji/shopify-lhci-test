@@ -1,8 +1,8 @@
 // require(['jquery'], function(jQuery) {
 
-    jQuery(".reward-points-accordion").on("click",function() {
+    $(".reward-points-accordion").on("click",function() {
         /*console.log(jQuery(this).next());*/
-        jQuery(this).next().slideToggle({easing:"linear"});
+        $(this).next().slideToggle({easing:"linear"});
 
     });
 
