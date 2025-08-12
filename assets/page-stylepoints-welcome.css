@@ -1,4 +1,9 @@
-@import 'ts-buttons.css';
+@import 'ts-buttons.css	';
+
+
+a.account-action-link {
+	text-decoration: underline;
+}
 
 .reward-points-landing-header {
 	 margin-bottom: 50px;
