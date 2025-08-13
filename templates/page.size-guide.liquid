@@ -2,3 +2,74 @@
     {{ 'page-size-guide.css' | asset_url | stylesheet_tag }}
 </head>
 
+{% assign appointmentLink = {{ shop.url }}'/virtual-appointments?url_key=virtual-style-consultation' %}
+
+<div class="section-container">
+
+    <div class="cta-banner va">
+        <div class="cta-container">
+            <div class="cta-row">
+                <div class="cta cta-1">
+                    <div class="cta-actions">
+                        <a href="{{ echo appointmentLink }}" target="_blank" id="cta-style" class="va-btn">Schedule a Style Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-container" style="text-align:left">
+        <img src="/pub/media/CMS/sizeguide/FitGuide_01.gif" alt="fit-guide-1">
+    </div>
+    <div class="img-container" style="border-top:1px solid #a8a8a8;border-bottom:1px solid #a8a8a8;display:inline-block;text-align:left">
+        <img style="display: block;margin: 0 auto" src="/pub/media/CMS/sizeguide/FitGuide_02.jpg" alt="fit-guide-2">
+    </div>
+
+    <!-- tape measure download -->
+
+    <div class="ts-size-guide-feature">
+        <h2 class="size-table-title">Printable Tape Measure</h2>
+        <p>Use our printable measuring tape if you don’t have a flexible cloth or plastic tape measure available. Most metal tape measures aren’t flexible enough to easily wrap around your body. Please note if this page is not printed correctly, the measurements will not be accurate. </p>
+        <h2 class="size-table-title">
+            <a href="/pub/media/CMS/sizeguide/TS-Printable_Tape_Measure.pdf" download>Download Now</a>
+        </h2>
+    </div>
+
+    <?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Cms::sizeguide/measurements.phtml")->toHtml() ?>
+
+</div>
+<div class="row margin-top-5x">
+    <div class="col-lg-3">
+        <img src="/pub/media/CMS/sizeguide/FitGuide_03__Kids.jpg" alt="fit-guide-kids">
+    </div>
+    <div class="col-lg-8 col-lg-push-1">
+        <div class="margin-bottom-1x">
+            <h2 class="" style="margin-top:0; font-size: 2.4rem;">
+                <?php echo __("TADASHI SHOJI KIDS SIZING 2 - 12")?>
+            </h2>
+        </div>
+        <div class="margin-bottom-1x">
+            <strong><?php echo __("HERE ARE A FEW MEASURING TIPS")?></strong>: <?php echo __("Make sure to keep the tape straight and dont let it fall lower in the back.")?>
+        </div>
+        <div class="margin-bottom-1x">
+            <div>
+                <strong><?php echo __("CHEST")?></strong>: <?php echo __("Measure across the child's chest, just below the underarms.")?>
+            </div>
+            <div>
+                <strong><?php echo __("WAIST")?></strong>: <?php echo __("Measure over the child's belly button, at the natural waist line.")?>
+            </div>
+            <div>
+                <strong><?php echo __("HIPS")?></strong>: <?php echo __("Measure around the fullest part of the hips and seat.")?>
+            </div>
+            <div>
+                <strong><?php echo __("LENGTH")?></strong>: <?php echo __("from high point of shoulder to hem.");?>
+            </div>
+        </div>
+        <div class="margin-bottom-1x">
+            <strong><?php echo __("PLEASE NOTE")?>: </strong><?php echo __("All weight is in pounds and height is in inches.")?>
+        </div>
+
+        <?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Cms::sizeguide/measurements_kids.phtml")->toHtml() ?>
+
+    </div>
+</div>
