@@ -1,0 +1,63 @@
+.cms-size-guide.cms-page-view .row .col-lg-push-1 div {
+	 font-size: 1.6rem;
+}
+ .cms-size-guide.cms-page-view .row .col-lg-push-1 div.subtitle h2 {
+	 margin: 0;
+	 font-weight: bold;
+}
+ .cms-size-guide.cms-page-view .column.main .cta-banner.va.measurements {
+	 display: none;
+}
+ .cms-size-guide.cms-page-view .column.main .cta-banner.va:first-child {
+	 width: 100%;
+	 background: black;
+	 text-align: center;
+	 text-transform: uppercase;
+	 font-size: 0.7em;
+	 font-family: Helvetica, Arial, sans-serif;
+	 letter-spacing: 0.2em;
+	 line-height: 4.5em;
+}
+ .cms-size-guide.cms-page-view .column.main .cta-banner.va:first-child a {
+	 color: white;
+}
+ tbody tr {
+	 border-bottom: 1px solid lightgrey;
+	 border-top: 1px solid lightgrey;
+}
+ tbody tr:first-child {
+	 border: none;
+}
+ td p {
+	 margin-bottom: 0;
+}
+ .size-table td, .size-table th {
+	 padding: .6em 10px !important;
+	 vertical-align: middle !important;
+	 white-space: nowrap;
+}
+ .size-table-title {
+	 text-indent: 10px;
+}
+ .ts-size-guide-feature {
+	 border-bottom: 1px solid #a8a8a8;
+	 text-align: left;
+	 font-family: 'Avenir', Arial, sans-serif;
+	 max-width: 992px;
+	 padding: 1em 0 2.5em;
+}
+ .ts-size-guide-feature p {
+	 padding: .6em 10px;
+	 text-align: justify;
+}
+ .ts-size-guide-feature h2 {
+	 text-transform: uppercase;
+	 font-family: 'Avenir Heavy', Arial, sans-serif !important;
+	 font-size: 1.1em;
+}
+ .ts-size-guide-feature a {
+	 color: black !important;
+	 text-decoration: none !important;
+	 border-bottom: 1px solid black;
+}
+ 
