@@ -1,14 +1,14 @@
-.cms-size-guide.cms-page-view .row .col-lg-push-1 div {
+.row .col-lg-push-1 div {
 	 font-size: 1.6rem;
 }
- .cms-size-guide.cms-page-view .row .col-lg-push-1 div.subtitle h2 {
+ .row .col-lg-push-1 div.subtitle h2 {
 	 margin: 0;
 	 font-weight: bold;
 }
- .cms-size-guide.cms-page-view .column.main .cta-banner.va.measurements {
+ .cta-banner.va.measurements {
 	 display: none;
 }
- .cms-size-guide.cms-page-view .column.main .cta-banner.va:first-child {
+ .cta-banner.va:first-child {
 	 width: 100%;
 	 background: black;
 	 text-align: center;
@@ -18,7 +18,7 @@
 	 letter-spacing: 0.2em;
 	 line-height: 4.5em;
 }
- .cms-size-guide.cms-page-view .column.main .cta-banner.va:first-child a {
+ .cta-banner.va:first-child a {
 	 color: white;
 }
  tbody tr {
