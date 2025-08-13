@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "product-information": {
       "type": "product-information",
@@ -24,14 +25,15 @@
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "bottom",
             "thumbnail_width": 44,
-            "aspect_ratio": "1/1.25",
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": false,
+            "media_fit": "cover",
             "media_radius": 0,
             "extend_media": true,
-            "constrain_to_viewport": false,
             "zoom": true,
             "video_loop": false,
             "hide_variants": false,
-            "padding-block-start": 0,
+            "padding-block-start": 85,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -42,12 +44,14 @@
           "type": "_product-details",
           "static": true,
           "settings": {
-            "gap": 40,
-            "sticky_details_desktop": true,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 40,
+            "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
@@ -67,6 +71,7 @@
               "type": "group",
               "name": "Header",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -117,6 +122,34 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "",
+                    "custom_color_hex": "#000000",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_c4D6Ew": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>{{ closest.product.metafields.product.base_sku.value }}</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "custom_color_hex": "#000000",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -131,6 +164,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -172,7 +206,7 @@
                         "show_sale_price_first": true,
                         "show_installments": false,
                         "show_tax_info": false,
-                        "type_preset": "h6",
+                        "type_preset": "h3",
                         "width": "fit-content",
                         "alignment": "left",
                         "font": "var(--font-body--family)",
@@ -209,6 +243,7 @@
               },
               "block_order": [
                 "text_38C4hJ",
+                "text_c4D6Ew",
                 "group_b7xNnM"
               ]
             },
@@ -216,7 +251,8 @@
               "type": "variant-picker",
               "name": "t:names.product_variant_picker",
               "settings": {
-                "variant_style": "buttons",
+                "variant_label_size": "base",
+                "variant_style": "dropdowns",
                 "show_swatches": true,
                 "alignment": "left",
                 "padding-block-start": 16,
@@ -240,7 +276,6 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
-                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -286,7 +321,9 @@
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "Product Details",
-                    "open_by_default": false
+                    "open_by_default": true,
+                    "icon": "none",
+                    "width": 20
                   },
                   "blocks": {
                     "text_n6TMzy": {
@@ -304,6 +341,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "color": "",
+                        "custom_color_hex": "#000000",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -322,14 +360,16 @@
                 "accordion_row_XMFatY": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Care & Maintenance",
-                    "open_by_default": false
+                    "heading": "Hemming Tips",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
                   },
                   "blocks": {
                     "text_wbGpVU": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>To maintain the beauty and integrity of your purchase, we recommend treating it with care. Simple maintenance practices, such as gentle washing and proper storage, can effectively preserve the longevity of your favorites. We encourage you to refer to the care instructions included with each item, designed to help you keep your purchase in top condition.</p>",
+                        "text": "{{ closest.product.metafields.product.hemming_tip | metafield_tag }}",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -341,6 +381,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "color": "",
+                        "custom_color_hex": "#000000",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -355,49 +396,11 @@
                   "block_order": [
                     "text_wbGpVU"
                   ]
-                },
-                "accordion_row_kmdwc8": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Size & Fit",
-                    "open_by_default": false
-                  },
-                  "blocks": {
-                    "text_hYWKPd": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Our products are crafted to fit true to size, ensuring that you can confidently select your usual size with ease. Whether you’re looking for a relaxed or tailored fit, our designs are made to complement your unique shape and style.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-primary--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_hYWKPd"
-                  ]
                 }
               },
               "block_order": [
                 "accordion_row_TbgNUF",
-                "accordion_row_XMFatY",
-                "accordion_row_kmdwc8"
+                "accordion_row_XMFatY"
               ]
             }
           },
@@ -439,6 +442,7 @@
             "case": "none",
             "wrap": "pretty",
             "color": "",
+            "custom_color_hex": "#000000",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -486,6 +490,7 @@
             "group_4V7yPa": {
               "type": "_product-card-group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -642,6 +647,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -730,10 +736,12 @@
       },
       "name": "Collection list",
       "settings": {
+        "collection_list": [],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 4,
         "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
         "columns_gap": 0,
         "bento_gap": 16,
         "rows_gap": 0,

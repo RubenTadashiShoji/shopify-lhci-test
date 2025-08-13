@@ -3,6 +3,23 @@
 
   @param {object} product_resource - The product object.
 {%- enddoc -%}
+{%- liquid
+  assign chosen = block.settings.variant_label_size | default: 'base'
+  case chosen
+    when 'xs'  
+      assign label_size_class = 'text-xs'
+    when 'sm'  
+      assign label_size_class = 'text-sm'
+    when 'lg'  
+      assign label_size_class = 'text-lg'
+    when 'xl'  
+      assign label_size_class = 'text-xl'
+    when '2xl' 
+      assign label_size_class = 'text-2xl'
+    else       
+      assign label_size_class = 'text-base'
+  endcase
+-%}
 
 {% unless product_resource.has_only_default_variant %}
   {% liquid
@@ -29,10 +46,14 @@
       data-shopify-visual-preview
     {% endif %}
   >
+     
     <form class="variant-picker__form">
       {%- for product_option in product_resource.options_with_values -%}
         {%- liquid
-          assign swatch_count = product_option.values | map: 'swatch' | compact | size
+          assign swatch_count = 0
+          if product_option.name == "Color"
+            assign swatch_count = product_option.values | compact | size
+          endif
           assign variant_style = block.settings.variant_style
 
           if swatch_count > 0 and block.settings.show_swatches
@@ -49,16 +70,30 @@
             assign longest_value = 0
           endif
         -%}
-
+        
         {%- if variant_style == 'swatch' or block.settings.variant_style == 'buttons' -%}
+
           <fieldset
             class="variant-option variant-option--buttons{% if variant_style == 'swatch' %} variant-option--swatches{% else %} variant-option--{{ settings.variant_button_width }}{% endif %}"
             {{ option_id_attribute }}
           >
-            <legend>
+            <legend class="{{ label_size_class }}">
               {{ product_option.name | escape -}}
               {%- if variant_style == 'swatch' -%}
-                <span class="variant-option__swatch-value">{{ product_option.selected_value }}</span>
+                {%- liquid
+                  assign words = product_option.selected_value | downcase | replace:"-", " " |split: " " 
+                  assign formatted = ""
+
+                  for word in words
+                    assign formatted_word = word | capitalize
+                    if forloop.first
+                      assign formatted = formatted_word 
+                    else
+                      assign formatted = formatted | append: " " | append: formatted_word
+                    endif
+                  endfor
+                -%}
+                <span class="variant-option__swatch-value">{{ formatted }}</span>
               {%- endif %}
             </legend>
             {%- for product_option_value in product_option.values -%}
@@ -87,19 +122,12 @@
                 >
                 {% if variant_style == 'swatch' %}
                   {% liquid
-                    assign featured_media = product_option_value.variant.featured_media
-
-                    # If the variant has no featured media, and we have a combined listing product, then fall back to
-                    # using the featured media of the child product that is linked to this option value.
-                    if featured_media == blank and product_option_value.product_url
-                      assign featured_media = product_option_value.variant.product.featured_media
-                    endif
+                    assign featured_media = product_resource.metafields.product.custom_swatch_image.value
                   %}
-
                   {% render 'swatch',
-                    swatch: product_option_value.swatch,
+                    swatch: product_option_value,
                     variant_image: featured_media,
-                    mode: 'unscaled'
+                    mode: 'filter'
                   %}
                 {% else %}
                   <span class="variant-option__button-label__text">{{ product_option_value | escape }}</span>
@@ -115,6 +143,7 @@
               {% endstyle %}
             {% endif %}
           </fieldset>
+          
         {%- elsif block.settings.variant_style == 'dropdowns' -%}
           {%
             # There is an opportunity to build a custom select component that will allow us to style the select element further (animation for dropdown, swatches shown in the dropdown options, etc)
@@ -131,7 +160,11 @@
           %}
 
           <div class="variant-option variant-option--dropdowns">
-            <label for="Option-{{ block.id }}-{{ forloop.index0 }}">{{ product_option.name | escape }}</label>
+            
+            <div class="w-full flex justify-between">
+              <label class="{{ label_size_class }}" for="Option-{{ block.id }}-{{ forloop.index0 }}">{{ product_option.name | escape }}</label>
+              <a class="{{ label_size_class }} !underline !decoration-blue-500 !text-blue-500 hover:cursor-pointer"> Size Guide</a>
+            </div>
             <div
               class="variant-option__select-wrapper"
               style="
@@ -146,6 +179,7 @@
                 class="variant-option__select"
               >
                 {%- for product_option_value in product_option.values -%}
+                  
                   <option
                     value="{{ product_option_value | escape }}"
                     data-input-id="{{ product_option.position }}-{{ forloop.index0 }}"

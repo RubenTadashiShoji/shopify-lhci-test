@@ -88,9 +88,11 @@
             id: 'accelerated-checkout',
             can_add_to_cart: can_add_to_cart
           %}
+          
         </div>
       {%- endform -%}
     </product-form-component>
+    
   {%- else -%}
     <div class="product-form-buttons">
       <button
@@ -103,6 +105,8 @@
       </button>
     </div>
   {%- endif -%}
+  {% comment %} TODO: Create Modal to send to Customer Service {% endcomment %}
+  <div class=" font-medium underline pt-3 hover:cursor-pointer">Don't see your size?</div>
 </span>
 
 {% if block.settings.show_pickup_availability %}

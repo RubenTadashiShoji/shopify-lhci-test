@@ -192,6 +192,10 @@
     sticky-content
     {% if block.settings.media_presentation == 'grid' %}
       media-gallery--{{ block.settings.media_columns }}-column
+      {% assign is_odd = sorted_media.size | modulo: 2 %}
+      {% if sorted_media.size >= 5 and is_odd != 0 %}
+        media-gallery--large-first-image
+      {% endif %}
       {% if block.settings.media_columns == "two" and block.settings.large_first_image%}media-gallery--large-first-image{% endif %}
     {% endif %}
     media-gallery--{{ block.settings.media_presentation }}
