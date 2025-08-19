@@ -1,0 +1,129 @@
+<head>
+    {{ 'page-stylepoints-welcome.css' | asset_url | stylesheet_tag }}
+    {% comment %} {{ 'page-stylepoints-welcome.js' | asset_url | script_tag }} {% endcomment %}
+    <script defer src="{{ 'page-stylepoints-welcome.js' | asset_url }}"></script>
+</head>
+
+
+{% if customer %}
+    {% assign is_logged_in = true %}
+{% endif %}
+
+<div class="reward-points-landing-header section-arrow-down">
+    <div class="reward-points-landing-title-wrapper">
+        <div class="line-1">welcome to</div>
+        <div class="line-2">
+            <h1 style="font-size: unset; font-weight: unset; margin: unset;">TS STYLE POINTS</h1>
+        </div>
+    </div>
+    <div class="reward-points-header-section-desc">Earn <strong>1 point </strong>for <strong>every $1 </strong>spent</div>
+    <div class="reward-points-header-section-desc">100 points = $10 reward</div>
+</div>
+<div class="reward-points-cms-content">
+    <div class="reward-points-section-1 text-center">
+        <div class="reward-points-subtitle">Bonus Points</div>
+        <div class="bonus-points">
+            <div class="bonus-points-section">
+                <div class="points-amount-circle points-amount-circle-1">
+                    <div class="point-amount">75</div>
+                    <div class="point-copy">Points</div>
+                </div>
+                <div class="points-amount-description">first time enrolling<br>into the loyalty<br>program</div>
+            </div>
+            <div class="bonus-points-section">
+                <div class="points-amount-circle points-amount-circle-2">
+                    <div class="point-amount">50</div>
+                    <div class="point-copy">Points</div>
+                </div>
+                <div class="points-amount-description">writing a review</div>
+            </div>
+            <div class="bonus-points-section">
+                <div class="points-amount-circle points-amount-circle-3">
+                    <div class="point-amount">25</div>
+                    <div class="point-copy">Points</div>
+                </div>
+                <div class="points-amount-description">signing up for<br>the newsletter</div>
+            </div>
+        </div>
+
+        {% if is_logged_in %}
+            {% comment %} TODO: update reward points url {% endcomment %}
+            <a class="btn btn-x-v3" href="#">CHECK MY POINTS</a>
+        {% else %}
+            <a class="btn btn-x-v3" href="{{ routes.account_login_url }}">JOIN</a>
+            <br><br>
+            <div>
+                Already have an account?
+                <span>
+                <a href="{{ routes.account_login_url }}" class="account-action-link" style="display: inline-block; color: #000000;">
+                    Sign in.
+                </a>
+            </span>
+            </div>
+        {% endif %}
+
+        <br><br>
+
+        </div>
+        <div class="reward-points-accordion section-arrow-down">
+            <div class="reward-points-subtitle">how to redeem</div>
+        </div>
+        <div class="reward-points-accordion-panel">
+            <div class="reward-points-header-section-desc text-center margin-bottom-2x">Redeeming your TS Style Points could not be easier.<br>Just follow the steps below.</div>
+            <div class="redeem-row">
+                <div class="step-col">
+                    <div class="step-copy">step<br><span class="step-number">1</span></div>
+                </div>
+                <div class="step-instruction-col">
+                    <div class="step-instruction-copy">
+                        SIGN IN<br>
+                        <div>
+                            Click on MY ACCOUNT to view the account dashboard.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redeem-row">
+                <div class="step-col">
+                    <div class="step-copy">step<br><span class="step-number">2</span></div>
+                </div>
+                <div class="step-instruction-col">
+                    <div class="step-instruction-copy">
+                        CLICK MY STYLE POINTS<br>
+                        <div>
+                            Under Account Dashboard, click on MY STYLE POINTS to get a detailed breakdown of how you earned your points. In order to redeem them, simply add the item(s) you require to your bag.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redeem-row">
+                <div class="step-col">
+                    <div class="step-copy">step<br><span class="step-number">3</span></div>
+                </div>
+                <div class="step-instruction-col">
+                    <div class="step-instruction-copy">
+                        ENTER POINTS AT CHECKOUT<br>
+                        <div>
+                            First, make sure you're logged in to your TADASHI SHOJI Account. Then simply add the products you want to purchase to your shopping cart. During your checkout process you will be able to choose how many points you want to spend on your order. Finalize by completing your purchase.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reward-points-accordion section-arrow-down">
+            <div class="reward-points-subtitle">frequently asked questions</div>
+        </div>
+        <div class="reward-points-accordion-panel">
+            <div class="reward-points-faq"><strong>What is the TS Style Points Program?</strong><br>TS Style Points is the loyalty program for TADASHISHOJI.COM. You can earn through various methods like online purchases, subscribing to our newsletter and writing a review.</div>
+            <div class="reward-points-faq"><strong>Who can join?</strong><br>All TADASHISHOJI.COM customers are welcome to enroll in the loyalty program. There is no cost to enroll in the program.</div>
+            <div class="reward-points-faq"><strong>How do I enroll?</strong><br>To enroll, register for an account. No purchase is necessary to enroll in the program.</div>
+            <div class="reward-points-faq"><strong>How do I earn style points?</strong><br>Points can be added to your reward balance in a few ways.<br>Earn points for every $1 dollar spent<br>100 points = $10<br><br> Bonus Points:<br>75 points / first time enrolling into the loyalty program<br>25 points / signing up for the newsletter<br>50 points / writing a review<br><br>Taxes, shipping and handling are excluded. If an item is cancelled or returned, you will not receive style points for that item.</div>
+            <div class="reward-points-faq"><strong>How can I use points?</strong><br>You can use points in your reward balance as discounts for future purchases at TADASHISHOJI.COM<br>There is no minimum point amount necessary to redeem. Points cannot be redeemed for cash or applied to previous purchases.</div>
+            <div class="reward-points-faq"><strong>When can I use my points?</strong><br>Points are available for use 30 days from the date of your purchase.</div>
+            <div class="reward-points-faq"><strong>Can I combine points from multiple accounts?</strong><br>Unfortunately, style points are non transferable and cannot be combined.</div>
+            <div class="reward-points-faq"><strong>How can I check my rewards balance?</strong><br>To check your reward balance, sign in to your account. The balance is listed under MY STYLE POINTS.</div>
+            <div class="reward-points-faq"><strong>Do my points expire?</strong><br>Yes, points expire 3 years from the date of purchase. TADASHI SHOJI reserves the right to change or modify the rewards program at any time.</div>
+            <div class="reward-points-faq"><strong>Do my purchases count if I buy from retail stores?</strong><br>At this time, TS Style Points is an exclusive loyalty program for TADASHISHOJI.COM. Purchases made from our retail stores or other brand partners do not count towards earning points on your TS Style Points Account.</div>
+            <div class="reward-points-faq"><strong>More Questions? Please contact <a class="black" href="mailto:customercare@tadashishoji.com">Customer Care</a></strong></div>
+        </div>
+            <a class="a-link-v1 black" href="{{ shop.url }}/stylepoints-terms">Terms & Conditions</a></div>

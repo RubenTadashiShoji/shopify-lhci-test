@@ -1,0 +1,176 @@
+@import 'ts-buttons.css	';
+
+
+a.account-action-link {
+	text-decoration: underline;
+}
+
+.reward-points-landing-header {
+	 margin-bottom: 50px;
+	 padding-top: 30px;
+	 padding-bottom: 34px;
+}
+ .section-arrow-down:after {
+     content: '';
+	 position: absolute;
+	 top: 100%;
+	 left: 0;
+	 right: 0;
+	 margin: 0 auto;
+	 width: 0;
+	 height: 0;
+	 border-top: solid 50px #f3f1f2;
+	 border-left: solid 50px transparent;
+	 border-right: solid 50px transparent;
+}
+ .reward-points-accordion, .reward-points-landing-header {
+	 background: #f3f1f2;
+	 text-align: center;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 position: relative;
+}
+ .reward-points-landing-title-wrapper {
+	 text-transform: uppercase;
+	 margin: 4em 0;
+	 line-height: 1.5em;
+}
+ .reward-points-landing-title-wrapper .line-1 {
+	 font-weight: 700;
+	 font-size: 27px;
+}
+ .reward-points-landing-title-wrapper .line-2 {
+	 font-weight: 700;
+	 font-size: 47px;
+}
+ .reward-points-section-1 {
+	 margin: 6em 0;
+}
+ .reward-points-subtitle {
+	 text-align: center;
+	 text-transform: uppercase;
+	 font-size: 27px;
+	 font-weight: 700;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ .bonus-points {
+	 margin: 44px 0 20px;
+}
+ .bonus-points-section {
+	 width: 33%;
+	 display: inline-block;
+	 text-align: center;
+	 vertical-align: top;
+}
+ @media screen and (max-width: 712px) {
+	 .bonus-points-section {
+		 width: unset;
+	}
+}
+ .points-amount-circle-1 {
+	 background: #014A81;
+}
+ .points-amount-circle {
+	 padding: 25px 0 0;
+	 font-weight: 700;
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 border-radius: 50%;
+	 font-size: 4em;
+}
+ .points-amount-circle .point-amount {
+	 font-weight: 900;
+}
+ .points-amount-circle .point-copy {
+	 font-weight: 300;
+	 font-size: 28px;
+	 text-transform: lowercase;
+}
+ .points-amount-circle, .reward-balance-summary .balance-point-amount {
+	 text-align: center;
+	 color: #fff;
+	 width: 200px;
+	 height: 200px;
+	 display: inline-block;
+}
+ .points-amount-description {
+	 text-transform: uppercase;
+	 font-weight: 300;
+	 margin: 30px 0 15px;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ .points-amount-circle-2 {
+	 background: #855FA8;
+}
+ .points-amount-circle-3 {
+	 background: #01A89E;
+}
+ .reward-points-accordion {
+	 margin-bottom: 6em;
+	 padding-top: 60px;
+	 padding-bottom: 60px;
+	 cursor: pointer;
+}
+ .reward-points-accordion:hover {
+	 background: #e1e0e0;
+}
+ .reward-points-accordion:hover:after {
+	 border-top-color: #e1e0e0;
+}
+ .reward-points-accordion-panel {
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 margin-top: 6em;
+	 display: none;
+}
+ .reward-points-accordion-panel .redeem-row {
+	 margin-bottom: 2em;
+	 line-height: normal;
+}
+ .reward-points-accordion-panel .step-col {
+	 width: 20%;
+	 text-align: right;
+	 display: inline-block;
+}
+ @media screen and (max-width: 414px) {
+	 .reward-points-accordion-panel .step-col {
+		 width: 100%;
+		 text-align: center;
+	}
+}
+ .reward-points-accordion-panel .step-col .step-copy {
+	 display: inline-block;
+	 text-align: center;
+	 font-size: 23px;
+}
+ .reward-points-accordion-panel .step-col .step-copy .step-number {
+	 font-weight: 700;
+	 font-size: 45px;
+}
+ .reward-points-accordion-panel .step-instruction-col {
+	 width: 74%;
+	 display: inline-block;
+	 padding-left: 8%;
+	 vertical-align: top;
+	 padding-top: 10px;
+}
+ .reward-points-accordion-panel .step-instruction-col .step-instruction-copy {
+	 text-align: center;
+	 display: inline-block;
+	 width: 83%;
+	 line-height: 22px;
+}
+ @media screen and (max-width: 414px) {
+	 .reward-points-accordion-panel .step-instruction-col {
+		 display: block;
+		 width: 100%;
+	}
+}
+ .reward-points-accordion-panel .reward-points-faq {
+	 padding: 0 1em;
+	 line-height: 22px;
+	 margin-bottom: 2em;
+}
+ .reward-points-header-section-desc {
+	 font-size: 23px;
+	 line-height: 1.3em;
+}
+ 
