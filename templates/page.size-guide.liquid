@@ -19,10 +19,10 @@
     </div>
 
     <div class="img-container" style="text-align:left">
-        <img src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/FitGuide_01.gif" alt="fit-guide-1">
+        <img class="m-auto" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/FitGuide_01.gif" alt="fit-guide-1">
     </div>
-    <div class="img-container" style="border-top:1px solid #a8a8a8;border-bottom:1px solid #a8a8a8;display:inline-block;text-align:left">
-        <img style="display: block;margin: 0 auto" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/FitGuide_02.jpg" alt="fit-guide-2">
+    <div class="img-container" style="border-top:1px solid #a8a8a8;border-bottom:1px solid #a8a8a8;text-align:left">
+        <img class="m-auto" style="display: block;margin: 0 auto" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/FitGuide_02.jpg" alt="fit-guide-2">
     </div>
 
     <!-- tape measure download -->
@@ -38,7 +38,9 @@
     {% section 'sizeguide-measurements' %}
 
 </div>
-<div class="mt-20 grid grid-cols-12 !gap-4">
+
+<!-- KIDS -->
+{% comment %} <div class="mt-20 grid grid-cols-12 !gap-4">
     <div class="col-span-12 lg:col-span-3">
         <div class="grid grid-cols-12">
             <div class="col-lg-3 lg:col-span-12 col-span-3">
@@ -74,9 +76,8 @@
                 <strong>PLEASE NOTE: </strong>All weight is in pounds and height is in inches.
             </div>
 
-            <!-- KIDS -->
             {% section 'sizeguide-measurements_kids' %}
 
         </div>
     </div>
-</div>
+</div> {% endcomment %}

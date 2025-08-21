@@ -47,7 +47,8 @@ h2.size-table-title {
 	 border-bottom: 1px solid #a8a8a8;
 	 text-align: left;
 	 font-family: 'Avenir', Arial, sans-serif;
-	 max-width: 992px;
+	 /* max-width: 992px; */
+	 max-width: 100%;
 	 padding: 1em 0 2.5em;
 }
  .ts-size-guide-feature p {
