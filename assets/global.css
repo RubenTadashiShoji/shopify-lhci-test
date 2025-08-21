@@ -1,0 +1,21 @@
+/* custom global rules */
+table {
+    max-width: 100%;
+}
+.table {
+    width: 100%;
+}
+.table:not(.cart):not(.totals)>thead>tr>th, 
+.table:not(.cart):not(.totals)>thead>tr>td {
+    border-bottom: 1px solid #d1d1d1;
+}
+thead {
+    background: #f7f6f6;
+    border: none;
+}
+th, td {
+  text-align: center;
+}
+th span, td span {
+  display: block;
+}
