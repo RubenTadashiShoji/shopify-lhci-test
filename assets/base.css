@@ -517,7 +517,7 @@ p:empty {
 }
 
 .grid {
-  --centered-column-number: 12;
+  /* --centered-column-number: 12; */
   --full-width-column-number: 14;
   --centered: column-1 / span var(--centered-column-number);
   --full-width: column-0 / span var(--full-width-column-number);
