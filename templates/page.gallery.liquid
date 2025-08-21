@@ -1,0 +1,73 @@
+<head>
+
+    <script src="//api.getcandid.com/scripts/wall.js" crossorigin="anonymous"></script>
+    <script src="//api.getcandid.com/scripts/wall-isotope-packery.pkgd.min.js" crossorigin="anonymous"></script>
+    <script src="//api.getcandid.com/scripts/widget.js" crossorigin="anonymous"></script>
+
+</head>
+
+<div class="candid-gallery-header">
+    <h1>#MyTadashiShoji</h1>
+</div>
+
+<div id="candid-fan-reel-wrapper"></div>
+
+<div class="candid-homepage-footer">Capture your moment in Tadashi Shoji.</div>
+
+<div class="candid-homepage-footer">
+    Add #MyTadashiShoji to your Instagram, Twitter pics or
+    <a href="javascript:candid.upload('cfa83003-4555-48e1-88dc-16329f2458b2', [], 'api.getcandid.com');" id="candid-upload-photos">
+        Upload A Photo
+    </a>
+</div>
+
+<div class="text-center margin-top-2x margin-bottom-1x color-medium-gray candid-social-terms">
+    <a href="mytadashishoji-terms-of-use" class="color-medium-gray">
+        #MYTADASHISHOJI TERMS OF USE
+    </a>
+</div>
+
+<br />
+
+<script id="mediaTemplate" type="text/x-jsrender">
+
+
+    <div class="candid-wall-cell">
+        <div class="candid-wall-overlay">
+        </div>
+        <div class="candid-wall-overlay-text">
+            <i class="candid-icon candid-fa-[[> Media.Source.toLowerCase() ]]"></i>
+            <div>SHOP NOW</div>
+        </div>
+        <a class='media' data-media-index='[[> Index ]]'>
+            <img data-original="[[> Media.Images.LowResolution.Url ]]"
+                 alt="[[> Title ]]"
+                 style="display:inline-block;"
+                 class="lazy">
+        </a>
+    </div>
+
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    
+        $.bridget('isotope', packery);
+        candid.wall('#candid-container', {
+            id: 'cfa83003-4555-48e1-88dc-16329f2458b2',
+            delimiters: ['[[', ']]'],
+            cluster: 'prod-2',
+            tag: 'community_gallery',
+            layoutMode: 'packery',
+            layout: 'isotope-packery',
+            theme: 'ct-minimal',
+            overlayTheme: 'ct-minimal'
+        });
+
+});
+
+</script>
+
+
+<div id="candid-container"></div>
