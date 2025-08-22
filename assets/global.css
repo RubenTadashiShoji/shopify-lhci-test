@@ -1,4 +1,20 @@
 /* custom global rules */
+/* adapting from Magento unless indicated otherwise */
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
+}
+h1{font-size: 2em; margin: .67em 0;}
+h2{font-size: 1.5em; margin: .83em 0;}
+h3{font-size: 1.17em; margin: 0 0 1em;}
+h4{font-size: 1em; margin: 1.33em 0;}
+h5{font-size: .83em;}
+h6{font-size: .75em; margin: 2.33em 0;}
+
+p {margin: 1em 0;}
+a {text-decoration: underline;}
+
+
 table {
     max-width: 100%;
 }
@@ -19,3 +35,238 @@ th, td {
 th span, td span {
   display: block;
 }
+
+.spacer {
+    height: 1px;
+    width: 100%;
+    background: #CECDCD;
+    margin: 8px 0;
+}
+span.separator {
+    margin: 5px;
+    font-weight: 300;
+}
+
+
+.btn-wrapper {
+    text-align: center;
+}
+.btn {
+    font-weight: 300;
+    min-height: 28px;
+    padding: .4em 1.5em .25em;
+    background: #000 !important;
+    font-size: 1.05rem;
+    line-height: 1.25em;
+    text-transform: uppercase!important;
+    color: #fff!important;
+    text-decoration: none!important;
+    border-radius: 0;
+
+}
+.ts-btn {
+    padding: 1.92em 7.5em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+button.ts-btn {
+    line-height: 0;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+
+.ts-btn:hover {
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+
+.ts-field {
+    position: relative;
+    border: 1px solid #000;
+    margin: 0 0 14px;
+    float: left;
+    width: 100%;
+    font-size: .875em;
+
+    .label {
+        display: inline-block;
+        float: left;
+        border-right: 1px solid #000;
+        border-radius: 0;
+    }
+}
+.ts-input-text {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+#ts-shadow, .ts-shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    z-index: 998;
+    opacity: .56;
+    display: none;
+
+    &.header-shadow {
+        @media screen and (min-width: 768px) {
+            height: 169px;
+        }
+        @media screen and (max-width: 767px) {
+            height: 143px;
+        }
+    }
+
+    &.active {
+        display: block !important;
+    }
+}
+
+.no-border {
+    border: none !important;
+}
+.no-float {
+    float: none !important;
+}
+
+.t-loading-screen {
+    position: fixed;
+    height: 100%;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    z-index: 1000!important;
+    display: none;
+}
+.t-custom-loader {
+    top: 50%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.modal-inner-content {
+    padding: 3rem 5rem;
+}
+
+
+/* CMS */
+
+/* ****** NEW RULES ****** */
+
+body[data-attribute-pagetype="page"] main {
+    /* margin: 0 5px; */
+    /* margin: 0 0.5em; */
+    margin: 0 0.8em;
+    /* margin: 0 1em; */
+}
+
+/* ****** /new ****** */
+
+
+body[data-attribute-pagetype="page"] {
+	 font-weight: 300;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-title {
+	 padding: 1.5em 0;
+	 border-bottom: 1px solid #000;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-title h1 {
+	 margin: 0;
+	 text-transform: uppercase;
+	 font-size: 1.875em;
+	 font-weight: 700;
+	 padding-left: 5%;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-title.text-center h1 {
+	 text-indent: unset;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-content {
+	 padding: 0 5%;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-subtitle {
+	 margin: 2.25em 0 1.5em;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-subtitle h2 {
+	 margin: 0;
+	 font-size: 1.1875em;
+	 font-weight: 700;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-text p {
+	 margin: 0;
+	 line-height: 1.5;
+	 font-size: .875em;
+}
+ body[data-attribute-pagetype="page"] .ts-container .ts-text, body[data-attribute-pagetype="page"] .ts-container .ts-img {
+	 margin: 1.5em 0;
+}
+ body[data-attribute-pagetype="page"] div.page-title-wrapper h1.page-title {
+	 background: #f3f1f2;
+	 text-align: center;
+	 text-transform: uppercase;
+	 border: 0;
+	 margin: 1.4em 0;
+	 padding: 0px;
+	 line-height: 2.8em;
+	 text-indent: 0;
+}
+ body[data-attribute-pagetype="page"] div.page-title-wrapper h1.page-title span {
+	 padding: 5px 0 0;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 font-weight: 100;
+	 font-size: 2.1em;
+	 vertical-align: middle;
+}
+ body[data-attribute-pagetype="page"] .contact-container .section, body[data-attribute-pagetype="page"] .returns-container .section.first {
+	 border-bottom: 1px solid #cecdcd;
+}
+ body[data-attribute-pagetype="page"] .contact-container h2, body[data-attribute-pagetype="page"] .returns-container h2 {
+	 font-family: Helvetica, sans-serif, abril-display, Arial;
+	 text-transform: uppercase;
+}
+ body[data-attribute-pagetype="page"] p {
+	 line-height: normal;
+}
+ body[data-attribute-pagetype="page"] img {
+	 margin: 0 auto;
+}
+ body[data-attribute-pagetype="page"] #maincontent a {
+	 text-decoration: underline;
+}
+ body[data-attribute-pagetype="page"] a {
+	 cursor: pointer;
+}
+ 

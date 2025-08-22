@@ -204,9 +204,6 @@
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
-  .col-span-8 {
-    grid-column: span 8 / span 8;
-  }
   .col-span-12 {
     grid-column: span 12 / span 12;
   }
@@ -236,6 +233,9 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
+  }
+  .m-0\.5 {
+    margin: calc(var(--spacing) * 0.5);
   }
   .m-auto {
     margin: auto;
@@ -309,11 +309,11 @@
   .justify-center {
     justify-content: center;
   }
+  .\!gap-2 {
+    gap: calc(var(--spacing) * 2) !important;
+  }
   .\!gap-4 {
     gap: calc(var(--spacing) * 4) !important;
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
   }
   .truncate {
     overflow: hidden;
@@ -468,29 +468,9 @@
       }
     }
   }
-  .sm\:col-span-3 {
-    @media (width >= 40rem) {
-      grid-column: span 3 / span 3;
-    }
-  }
-  .sm\:col-span-6 {
-    @media (width >= 40rem) {
-      grid-column: span 6 / span 6;
-    }
-  }
-  .md\:col-span-12 {
-    @media (width >= 48rem) {
-      grid-column: span 12 / span 12;
-    }
-  }
   .lg\:col-span-3 {
     @media (width >= 64rem) {
       grid-column: span 3 / span 3;
-    }
-  }
-  .lg\:col-span-8 {
-    @media (width >= 64rem) {
-      grid-column: span 8 / span 8;
     }
   }
   .lg\:col-span-9 {

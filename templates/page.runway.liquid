@@ -1,0 +1,280 @@
+{% comment %} 
+==================================================================================
+
+	PROGRAMMER NOTES:
+
+        This is for videos of our runway shows, not to be confused with the 'Runway' category, which displays a collection of products
+
+
+	PENDING OPTIMIZATIONS:
+
+		Generate mid-video screenshot (i.e. not frame 1) for videos NOT embedded from YouTube (or Vimeo)
+
+
+  IMPORTANT:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	- all iframes must have a title, in order to comply with accessibility guidelines
+
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+================================================================================== 
+{% endcomment %}
+
+<head>
+    {{ 'page-runway.css' | asset_url | stylesheet_tag }}
+</head>
+
+
+{% assign baseUrl = {{ shop.url }} %}
+
+<div class="runway-wrapper">
+
+    <h1 class="m-0.5"> FALL/WINTER 2025 PREVIEW </h1>
+    <h2 class="m-0.5"> February 2025 </h2>
+
+    <p class="view-collection">
+        <a href="{{ echo baseUrl }}/collection/fall-winter-2025-Preview">View Collection</a>
+    </p>
+
+    <!-- NOTE: TICK COUNTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <!--
+        <div data-type="countdown" data-id="1722476" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 15%; margin: 0 auto;"><a href="//www.tickcounter.com/countdown/1722476/countdown" title="Countdown">Countdown</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+    -->
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tick counter -->
+
+
+
+    <!-- FEATURED VIDEO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- <img src="https://d3j604og7dzrto.cloudfront.net/media/runway/Pre_Slate/SS19__pre_slate.jpg" /> -->
+
+    <!-- NOTE: Previous tag for live stream // keeping for reference -->
+
+    <!-- <script type="text/javascript" src="//embed.blivenyc.com/speed/integratedEmbed/?width=980&tags=eog-support,flagship,integrated&campaign_id=2176&responsive=1&integrated=1&gk=7gw8ty"></script> -->
+
+    <!-- <script type="text/javascript" src="//embed.blivenyc.com/speed/integratedEmbed/?width=980&tags=eog-support,flagship,integrated&campaign_id=2390&responsive=1&integrated=1&gk=d134gk"></script> -->
+
+    <!-- Embed code support including mute & autoplay settings at blive.nyc/support -->
+
+
+    <!-- commenting out temporarily in lieu of tick counter -->
+
+    <div class="runway-feature">
+
+        <iframe
+            src="https://www.youtube.com/embed/sPLQc6XuwqE"
+            
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            title="Fall/Winter 2025 Preview">
+        </iframe>
+
+    </div>
+
+<!--    <script type="text/javascript" data-embed_id="ls_embed_1580327179" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>-->
+
+
+
+
+    <p></p>
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FEATURED VIDEO -->
+
+    <!-- Previous YouTube Runway Videos as links >>>>>>>>>> -->
+
+    <div class="runway-previous">
+        <h3>Watch Previous Fashion Shows</h3>
+
+        <div class="container" style="width: 100%; max-width: unset;">
+            <div class="grid grid-cols-12 !gap-2">
+
+                <div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/y9gcrzxVS2E?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Spring/Summer 2025 Preview">
+                    </iframe>
+
+                    <h4>Spring/Summer 2025 Preview</h4>
+                    <p class="view-collection"><a href="{{ echo baseUrl }}/collection/Spring-Summer-2025-Preview">View Collection</a></p>
+
+                </div>
+
+                <div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/P7N0QCoXMJU?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Fall/Winter 2024 Digital Presentation">
+                    </iframe>
+
+                    <h4>Fall/Winter 2024 Digital Presentation</h4>
+                    <p class="view-collection"><a href="{{ echo baseUrl }}/collection/FW24-Digital-Presentation">View Collection</a></p>
+
+                </div>
+
+                <div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/--e8Vl9ylso?si=2nGLbz0WpOT8UxgB?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Spring/Summer 2024 Digital Presentation">
+                    </iframe>
+
+                    <h4>Spring/Summer 2024 Digital Presentation</h4>
+                    <p class="view-collection"><a href="{{ echo baseUrl }}/collection/Spring-Summer-2024-Digital-Presentation">View Collection</a></p>
+
+                </div>
+
+                <div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/VMrYw8rZETM?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Fall/Winter 2023 Digital Presentation">
+                    </iframe>
+
+                    <h4>Fall/Winter 2023 Digital Presentation</h4>
+                    <p class="view-collection"><a href="{{ echo baseUrl }}/collection/FW23-Digital-Presentation">View Collection</a></p>
+
+                </div>
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/33qZPuHzjSk?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Spring/Summer 2023 Digital Presentation">
+                    </iframe>
+
+                    <h4>Spring/Summer 2023 Digital Presentation</h4>
+                    <p class="view-collection"><a href="https://<?/*= $baseUrl */?>/collection/SS23-Digital-Presentation">View Collection</a></p>
+
+                </div>-->
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/ZcexS0MOJpM?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Fall/Winter 2022 Digital Presentation">
+                    </iframe>
+
+                    <h4>Fall/Winter 2022 Digital Presentation</h4>
+                    <p class="view-collection"><a href="https://<?/*= $baseUrl */?>/collection/FW22-Digital-Presentation">View Collection</a></p>
+
+                </div>-->
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/REys54p4Oxo?rel=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Spring/Summer 2022 Digital Presentation">
+                    </iframe>
+
+                    <h4>Spring/Summer 2022 Digital Presentation</h4>
+                    <p class="view-collection"><a href="https://<?/*= $baseUrl */?>/collection/SS22-Digital-Presentation">View Collection</a></p>
+
+                </div>-->
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/-Z03ANOTY6E?rel=0&amp;showinfo=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Fall/Winter 2021 Digital Presentation">
+                    </iframe>
+
+                    <h4>Fall/Winter 2021 Digital Presentation</h4>
+                    <p class="view-collection"><a href="{{ echo baseUrl }}/collection/FW21-Digital-Presentation">View Collection</a></p>
+
+                </div>-->
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/rRzXTXQtNso?rel=0&amp;showinfo=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Spring/Summer 2021 Digital Presentation">
+                    </iframe>
+
+                    <h4>Spring/Summer 2021 Digital Presentation</h4>
+
+                </div>-->
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/OCjy-Vcy6W0?rel=0&amp;showinfo=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Fall/Winter 2020 Runway Show">
+                    </iframe>
+
+                    <h4>Fall/Winter 2020</h4>
+
+                </div>-->
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/qXDpP_K_qtU?rel=0&amp;showinfo=0"
+                        
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Spring/Summer 2020 Runway Show">
+                    </iframe>
+
+                    <h4>Spring/Summer 2020</h4>
+
+                </div>-->
+
+
+                <!--<div class="col-span-3">
+                    <iframe
+                        id="ls_embed_1547569664"
+                        src="https://livestream.com/accounts/19186937/events/8527185/player?width=980&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"
+                        marginheight="0"
+                        marginwidth="0"
+                        scrolling="no"
+                        allowfullscreen="true"
+                        webkitallowfullscreen="true"
+                        mozallowfullscreen="true"
+                        webkitallowfullscreen
+                        mozallowfullscreen
+                        title="Fall/Winter 2019 Runway Show">
+                    </iframe>
+
+                    <h4>Fall/Winter 2019</h4>
+
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

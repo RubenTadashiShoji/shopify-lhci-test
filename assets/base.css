@@ -209,7 +209,7 @@ p:empty {
 /* Remove bottom margin from last text item, or previous to last if the last is empty */
 :last-child:is(p, h1, h2, h3, h4, h5, h6),
 :where(p, h1, h2, h3, h4, h5, h6):nth-child(2):has(+ :last-child:empty) {
-  margin-block-end: 0;
+  /* margin-block-end: 0; */
 }
 
 /* view transitions */
@@ -530,19 +530,19 @@ p:empty {
   .grid {
     display: grid;
     gap: 0;
-    grid-template-columns: var(--margin-4xl) repeat(var(--centered-column-number), minmax(0, 1fr)) var(--margin-4xl);
-    grid-template-areas: 'column-0 column-1 column-2 column-3 column-4 column-5 column-6 column-7 column-8 column-9 column-10 column-11 column-12 column-13';
+    /* grid-template-columns: var(--margin-4xl) repeat(var(--centered-column-number), minmax(0, 1fr)) var(--margin-4xl);
+    grid-template-areas: 'column-0 column-1 column-2 column-3 column-4 column-5 column-6 column-7 column-8 column-9 column-10 column-11 column-12 column-13'; */
   }
 }
 
 @media screen and (min-width: 1400px) {
   .grid {
-    grid-template-columns:
+    /* grid-template-columns:
       1fr repeat(
         var(--centered-column-number),
         minmax(0, calc((var(--page-width) - var(--page-margin) * 2) / var(--centered-column-number)))
       )
-      1fr;
+      1fr; */
   }
 }
 

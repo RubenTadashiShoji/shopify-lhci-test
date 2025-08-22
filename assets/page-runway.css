@@ -1,0 +1,95 @@
+.runway-wrapper {
+    font-size: 1rem;
+}
+.runway-wrapper h1 {
+	 font-size: 1.25em;
+	 font-weight: bold;
+	 font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+	 text-transform: uppercase;
+}
+.runway-wrapper h2 {
+	 font-size: .765em;
+	 font-family: "Helvetica", "Arial", sans-serif !important;
+	 text-transform: uppercase;
+}
+.runway-wrapper h3 {
+	 padding: 10px 7px;
+	 font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
+	 font-size: .75em;
+	 font-weight: bold;
+	 text-transform: uppercase;
+}
+.runway-wrapper h4 {
+	 font-size: .75em;
+	 margin: 10px 0;
+	 text-transform: uppercase;
+}
+.runway-wrapper .runway-feature {
+	 overflow: hidden;
+	 padding-top: 56.25%;
+	 position: relative;
+}
+.runway-wrapper .runway-feature iframe {
+	 border: 0;
+	 height: 100%;
+	 left: 0;
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+}
+.runway-wrapper .runway-previous {
+	 margin-top: 1em;
+}
+.runway-wrapper .runway-previous iframe {
+    width: 100%;
+    height: 100%;
+}
+.runway-wrapper .runway-thumbnail {
+	 padding: 0 5px;
+}
+.runway-wrapper .runway-thumbnail iframe,.runway-wrapper .runway-thumbnail video {
+	 width: 100%;
+	 height: 11em;
+}
+.runway-wrapper p.view-collection {
+	 font-size: .765em;
+	 font-weight: normal;
+	 text-transform: none;
+	 text-decoration: underline;
+}
+ @media screen and (max-width: 1389px) {
+	 .runway-thumbnail iframe, .runway-thumbnail video {
+		 height: 9em !important;
+	}
+}
+ @media screen and (max-width: 1211px) {
+	 .runway-thumbnail iframe, .runway-thumbnail video {
+		 height: 126px !important;
+	}
+}
+ @media screen and (max-width: 1032px) {
+	 .runway-thumbnail iframe, .runway-thumbnail video {
+		 height: 90px !important;
+	}
+	 .tickcounter {
+		 margin-bottom: 10px !important;
+	}
+}
+ @media screen and (max-width: 767px) {
+	 .runway-thumbnail iframe, .runway-thumbnail video {
+		 height: 350px !important;
+	}
+}
+ @media screen and (max-width: 670px) {
+	 .runway-thumbnail iframe, .runway-thumbnail video {
+		 height: 200px !important;
+	}
+	 .tickcounter {
+		 padding-bottom: 25% !important;
+	}
+}
+ @media screen and (max-width: 400px) {
+	 .runway-thumbnail iframe, .runway-thumbnail video {
+		 height: 150px !important;
+	}
+}
