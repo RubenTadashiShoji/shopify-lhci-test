@@ -89,7 +89,8 @@
         "button_PAQMwR"
       ],
       "custom_css": [
-        "h1 {font-family: \"Avenir\", \"Helvetica\", sans-serif !important; line-height: 1.25em; color: #000; font-weight: 500;}"
+        "h1 {font-family: \"Avenir\", \"Helvetica\", sans-serif !important; line-height: 1.25em; color: #000; font-weight: 500;}",
+        "h1 strong {font-family: \"Avenir Black\" !important; font-size: }"
       ],
       "settings": {
         "content_direction": "column",
@@ -97,7 +98,7 @@
         "section_height": "",
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 20,
+        "gap": 0,
         "color_scheme": "scheme-1",
         "padding-block-start": 100,
         "padding-block-end": 100
