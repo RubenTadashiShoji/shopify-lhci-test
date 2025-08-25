@@ -43,7 +43,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1><strong>THE PAGE YOU ARE LOOKING FOR IS NOT AVAILABLE.</strong></h1>",
+            "text": "<h1>THE PAGE YOU ARE LOOKING FOR IS NOT AVAILABLE.</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -116,6 +116,9 @@
         "text_Ua9XAW",
         "text_gc4PAW",
         "button_PAQMwR"
+      ],
+      "custom_css": [
+        "h1 {font-family: \"Avenir\", \"Helvetica\", sans-serif !important;}"
       ],
       "settings": {
         "content_direction": "column",
