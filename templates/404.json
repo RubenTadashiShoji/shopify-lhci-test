@@ -364,7 +364,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 25,
+            "padding-block-end": 30,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           }
@@ -378,13 +378,46 @@
             "open_in_new_tab": false,
             "image_ratio": "portrait"
           }
+        },
+        "category_YFFkxR": {
+          "type": "category",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_ijGqkW": {
+          "type": "category",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
+        },
+        "category_6idbGj": {
+          "type": "category",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
         }
       },
       "block_order": [
         "text_jqEJPt",
-        "category_DR8tbQ"
+        "category_DR8tbQ",
+        "category_YFFkxR",
+        "category_ijGqkW",
+        "category_6idbGj"
       ],
-      "name": "Category showcase",
+      "name": "Category showcase (temp placeholder)",
       "settings": {
         "layout_type": "grid",
         "columns": 4,
