@@ -66,34 +66,6 @@
           },
           "blocks": {}
         },
-        "text_gc4PAW": {
-          "type": "text",
-          "name": "t:names.text",
-          "disabled": true,
-          "settings": {
-            "text": "<h2>Try updating your search or exploring these featured categories</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "custom_color_hex": "#000000",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "button_PAQMwR": {
           "type": "button",
           "name": "t:names.button",
@@ -114,7 +86,6 @@
       "block_order": [
         "text_GqmVFf",
         "text_Ua9XAW",
-        "text_gc4PAW",
         "button_PAQMwR"
       ],
       "custom_css": [
@@ -123,11 +94,11 @@
       "settings": {
         "content_direction": "column",
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "",
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 20,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding-block-start": 100,
         "padding-block-end": 100
       }
@@ -374,12 +345,11 @@
       "blocks": {
         "text_jqEJPt": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<h1>SHOP BY CATEGORY</h1>",
-            "width": "fit-content",
+            "text": "<h2>Try updating your search or exploring these featured categories</h2>",
+            "width": "100%",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -397,17 +367,28 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0
           }
+        },
+        "category_DR8tbQ": {
+          "type": "category",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "link": "",
+            "open_in_new_tab": false,
+            "image_ratio": "portrait"
+          }
         }
       },
       "block_order": [
-        "text_jqEJPt"
+        "text_jqEJPt",
+        "category_DR8tbQ"
       ],
       "name": "Category showcase",
       "settings": {
         "layout_type": "grid",
         "columns": 4,
         "mobile_columns": "2",
-        "columns_gap": 8,
+        "columns_gap": 10,
         "rows_gap": 8,
         "mobile_card_size": "60cqw",
         "section_width": "page-width",
