@@ -89,7 +89,7 @@
         "button_PAQMwR"
       ],
       "custom_css": [
-        "h1 {font-family: \"Avenir\", \"Helvetica\", sans-serif !important;}"
+        "h1 {font-family: \"Avenir\", \"Helvetica\", sans-serif !important; line-height: 1.25em; color: #000; font-weight: 500;}"
       ],
       "settings": {
         "content_direction": "column",
