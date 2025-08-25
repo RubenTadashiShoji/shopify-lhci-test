@@ -69,6 +69,7 @@
         "text_gc4PAW": {
           "type": "text",
           "name": "t:names.text",
+          "disabled": true,
           "settings": {
             "text": "<h2>Try updating your search or exploring these featured categories</h2>",
             "width": "fit-content",
