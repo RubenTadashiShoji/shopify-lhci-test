@@ -2,9 +2,9 @@
     {{ 'page-virtual-appointments.css' |  asset_url |  stylesheet_tag }}
     {% comment %} {{ 'page-virtual-appointments.scss.css' |  asset_url |  stylesheet_tag }} {% endcomment %}
 
-    <script src="https://calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    
 </head>
+
+{% include 'calendly-assets' %}
 
 <div class="virtual-app-form-container">
     <header>
@@ -191,55 +191,15 @@
 
 </div>
 
-
-{% comment %} <?php
-
-/**
- * NOTE: loading this external script and then calling classes/methods on it is pretty tricky due to anonymous define() calls present in script, after requireJS has already been loaded
- *  - the trick here is to load the external script via require.config(), and then call require() passing in dependencies, BUT DO NOT call library within require()
- *     -- require() should be empty, and library calls should be placed OUTSIDE require() -- (which obviously means using vanilla JS instead of jQuery)
- *       --> I don't know WHY this works... but it does
- *
- * ADDITIONAL INFO:
- *  - calling library from inside require() makes library class methods inaccessible (e.g. Calendly.showPopupWidget())
- *  - excluding the empty require() call makes library classes inaccessible (e.g. Calendly)
- *
- */
-?>
-
-<?php /**
- * leaving this here to be searchable for easy reference next time I encounter this type of issue
- * - also why I'm leaving JS code below instead of modularizing to separate JS file
- */ ?> {% endcomment %}
-
-{% comment %} <script src="https://calendly.com/assets/external/widget.js" type="text/javascript" async></script> {% endcomment %}
-
 <script>
-    // require.config({
-    //     map: {
-    //         '*': {
-    //             'calendly':  'https://calendly.com/assets/external/widget.js'
-    //         }
-    //     }
-    // });
-
-    // require(['calendly'], function(Calendly){
-
-    // });
-
+    
     document.getElementById('cta-1').addEventListener('click', function(){
-
-        console.log('=== checking Calendly object...');
-        console.log(Calendly);
-
         Calendly.showPopupWidget(
             'https://calendly.com/tadashishoji/virtual-style-consultation'
         );
         return false;
 
     });
-    // window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/tadashishoji/virtual-style-consultation', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: false }); }
-
     document.getElementById('cta-2').addEventListener('click', function(){
 
         Calendly.showPopupWidget(
@@ -290,7 +250,7 @@
     });
 
 
-    /** NEW 7/18/23: calling methods automatically on page load based on URL param
+    /** calling methods automatically on page load based on URL param
      * URL params are the following:
      * - url_key => 'special-order', 'after-purchase-consultation', etc  (MUST BE VALID)
      * - cta_id => 'cta-1', 'cta-2', etc
