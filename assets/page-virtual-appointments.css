@@ -1,0 +1,286 @@
+.cms-virtual-appointment-confirmation div.virtual-app-form-container {
+	 padding: 0;
+}
+ div.virtual-app-form-container {
+	 text-align: center;
+	 margin: 0 auto;
+	 background-color: #FAF7F0;
+	 padding-bottom: .5em;
+}
+ div.virtual-app-form-container * {
+	 line-height: normal;
+}
+ div.virtual-app-form-container header {
+	 padding-bottom: 1.56em;
+}
+ div.virtual-app-form-container .cta-container {
+	 margin-bottom: 1em;
+}
+ div.virtual-app-form-container .cta-col {
+	 display: inline-block;
+	 width: 49%;
+	 vertical-align: top;
+}
+ div.virtual-app-form-container .cta-row {
+	 display: block;
+	 width: 100%;
+	 vertical-align: top;
+}
+ div.virtual-app-form-container .cta-row .cta:not(.va-follow-up), div.virtual-app-form-container .cta-row div.va-follow-up:nth-child(2) {
+	 vertical-align: top;
+}
+ @media screen and (min-width: 768px) {
+	 div.virtual-app-form-container .cta-row .cta:not(.va-follow-up), div.virtual-app-form-container .cta-row div.va-follow-up:nth-child(2) {
+		 width: 49%;
+		 display: inline-block;
+	}
+}
+ div.virtual-app-form-container div.cta {
+	 text-align: left;
+	 padding: 0 3.4em 2em;
+	 color: #564f4c;
+	 position: relative;
+}
+ div.virtual-app-form-container div.va-follow-up > div {
+	 margin: 0 auto;
+	 background: white;
+	 padding: 1.25em 3.4em;
+	 text-align: center;
+}
+ @media screen and (min-width: 992px) {
+	 div.virtual-app-form-container div.va-follow-up:nth-child(1) > div {
+		 width: 740px;
+	}
+}
+ @media screen and (max-width: 991px) {
+	 div.virtual-app-form-container div.va-follow-up {
+		 display: block !important;
+		 width: 100% !important;
+	}
+}
+ div.virtual-app-form-container div h2, div.virtual-app-form-container div h1 {
+	 text-transform: uppercase;
+	 font-family: 'Avenir Heavy', Arial, sans-serif !important;
+	 margin-bottom: 0;
+	 font-size: 1em;
+}
+ div.virtual-app-form-container div p {
+	 font-family: "Avenir Book", Arial, sans-serif;
+	 font-size: 0.975em;
+	 margin-top: 0.3em;
+	 line-height: 1.7em;
+	 letter-spacing: 0.03em;
+	 margin-bottom: 0.5em;
+}
+ div.virtual-app-form-container footer {
+	 font-family: "Avenir Book", Arial, sans-serif;
+	 font-size: 1em;
+	 margin-top: 0.7em;
+	 line-height: 1.7em;
+	 letter-spacing: 0.03em;
+	 margin-bottom: 0.5em;
+	 text-transform: uppercase;
+	 padding: 0 0 1.25em;
+}
+ div.virtual-app-form-container footer a, div.virtual-app-form-container footer > div {
+	 color: #564f4c !important;
+	 padding: 0 6%;
+	 display: inline-block;
+	 text-decoration: underline;
+}
+ @media screen and (max-width: 1031px) {
+	 div.virtual-app-form-container footer a, div.virtual-app-form-container footer > div {
+		 padding: 0 3%;
+	}
+}
+ @media screen and (max-width: 912px) {
+	 div.virtual-app-form-container footer a, div.virtual-app-form-container footer > div {
+		 padding: 0.3em 0;
+		 display: block;
+	}
+}
+ div.virtual-app-form-container .va-btn {
+	 padding: .4em 0.7em;
+	 background: none;
+	 font-size: 1em;
+	 text-transform: uppercase !important;
+	 text-decoration: none !important;
+	 color: #88837F;
+	 border: 2px solid #88837F;
+	 font-family: 'Avenir Book', Arial, sans-serif !important;
+	 vertical-align: unset;
+}
+ div.virtual-app-form-container .va-time {
+	 text-align: center;
+	 font-size: 1em;
+	 text-transform: uppercase !important;
+	 color: #514D4B;
+	 font-family: 'Avenir Book', Arial, sans-serif !important;
+	 display: inline-block;
+	 height: 3em;
+	 vertical-align: middle;
+	 padding: 0 0 0 1.5em;
+}
+ div.virtual-app-form-container .va-time img {
+	 height: 1.6em;
+}
+ div.virtual-app-form-container .va-time.thirty:after {
+	 content: '30 min';
+	 display: block;
+	 text-align: center;
+}
+ div.virtual-app-form-container .va-time.forty-five:after {
+	 content: '45 min';
+	 display: block;
+	 text-align: center;
+}
+ div.virtual-app-form-container .va-time.sixty:after {
+	 content: '60 min';
+	 display: block;
+	 text-align: center;
+}
+ div.virtual-app-form-container div.confirmation-container {
+	 display: flex;
+	 position: relative;
+}
+ div.virtual-app-form-container div.confirmation-container > div {
+	 height: 508px;
+}
+ div.virtual-app-form-container div.confirmation-container > div.--left {
+	 background: url('/pub/media/CMS/virtualappointments/VA-confirmation-background--left.png') no-repeat right;
+	 width: 40%;
+}
+ div.virtual-app-form-container div.confirmation-container > div.--right {
+	 background: url('/pub/media/CMS/virtualappointments/VA-confirmation-background--right.png') no-repeat;
+	 width: 60%;
+}
+ @media screen and (max-width: 1211px) {
+	 div.virtual-app-form-container div.confirmation-container > div.--left {
+		 width: 50%;
+	}
+}
+ @media screen and (max-width: 1031px) {
+	 div.virtual-app-form-container div.confirmation-container > div.--left {
+		 background-position: center;
+	}
+}
+ @media screen and (max-width: 912px) {
+	 div.virtual-app-form-container div.confirmation-container > div.--left {
+		 background-position: center;
+	}
+}
+ div.virtual-app-form-container div.confirmation-container > div .confirmation-message {
+	 height: 100%;
+	 padding: 4em 1.5em;
+}
+ @media screen and (max-width: 912px) {
+	 div.virtual-app-form-container div.confirmation-container > div .confirmation-message {
+		 padding: 3em 1.5em;
+	}
+}
+ div.virtual-app-form-container div.confirmation-container > div .confirmation-message * {
+	 font-family: 'Avenir', 'Arial', sans-serif !important;
+}
+ div.virtual-app-form-container div.confirmation-container > div .confirmation-message h2 {
+	 font-size: 1.5em;
+	 font-weight: bold !important;
+	 margin: 0.5em 0;
+}
+ div.virtual-app-form-container div.confirmation-container > div .confirmation-message h2, div.virtual-app-form-container div.confirmation-container > div .confirmation-message h3 {
+	 color: #56504C;
+}
+ div.virtual-app-form-container div.confirmation-container > div .confirmation-message .event-details {
+	 border: 1px solid #E5E5E5;
+	 border-radius: 2px;
+	 background-color: #F9F7F1;
+	 padding: 2em;
+	 margin: 0 auto;
+	 width: 80%;
+	 max-width: 390px;
+	 min-height: 170px;
+}
+ div.virtual-app-form-container div.confirmation-container > div .confirmation-message .event-details h3 {
+	 font-weight: bold;
+}
+ @media screen and (max-width: 767px) {
+	 div.virtual-app-form-container div.confirmation-container {
+		 display: block;
+		 height: 80vh;
+		 min-height: 600px;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--left {
+		 background: url('/pub/media/CMS/virtualappointments/VA-photo.png') no-repeat center;
+		 aspect-ratio: 1;
+		 width: 100%;
+		 height: 100%;
+		 background-size: cover;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--right {
+		 position: absolute;
+		 top: 10%;
+		 left: 10%;
+		 width: 80%;
+		 max-height: 80%;
+		 background-size: cover;
+		 border: 1px solid;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--right .confirmation-message {
+		 background: #FFFFFF;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--right .confirmation-message .event-details {
+		 width: 100%;
+	}
+}
+ @media screen and (max-width: 414px) {
+	 div.virtual-app-form-container div.confirmation-container {
+		 background: #FFF;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--left {
+		 display: none;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--right {
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 border: none;
+	}
+	 div.virtual-app-form-container div.confirmation-container > div.--right .confirmation-message .event-details {
+		 width: 80%;
+	}
+}
+ @media screen and (max-width: 767px) {
+	 .virtual-app-form-container div.cta-col, .virtual-app-form-container div.cta-row .cta {
+		 display: block;
+		 width: 100%;
+	}
+	 .virtual-app-form-container div.cta {
+		 padding-left: 0.5em;
+		 padding-right: 0.5em;
+	}
+	 .virtual-app-form-container footer {
+		 padding: 0;
+	}
+	 div.virtual-app-form-container .cta-actions button, div.virtual-app-form-container .cta-actions span {
+		 margin: 0.5em 0;
+	}
+	 div.virtual-app-form-container .cta-actions .va-time {
+		 float: right;
+		 padding: 0;
+	}
+}
+ @media screen and (max-width: 607px) {
+	 div.virtual-app-form-container div.cta.va-follow-up {
+		 padding: 0;
+	}
+	 div.virtual-app-form-container div.cta.va-follow-up > div {
+		 padding: 1.25em 1em;
+	}
+}
+ @media screen and (max-width: 340px) {
+	 .cta-actions button, .cta-actions span {
+		 display: block;
+		 width: 100%;
+	}
+}
+ 

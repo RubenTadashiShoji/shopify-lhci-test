@@ -1,0 +1,401 @@
+<head>
+    {{ 'page-virtual-appointments.css' |  asset_url |  stylesheet_tag }}
+    {% comment %} {{ 'page-virtual-appointments.scss.css' |  asset_url |  stylesheet_tag }} {% endcomment %}
+
+    <script src="https://calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+</head>
+
+<div class="virtual-app-form-container">
+    <header>
+        <img class="hide-mobile" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/VA-Header--desktop.jpg" alt="tadashi-shoji-virtual-appointments"/>
+        <img class="mobile-only" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/VA-Header--mobile.jpg" alt="tadashi-shoji-virtual-appointments"/>
+    </header>
+
+    <div class="cta-container">
+
+        <div class="cta-row">
+
+            <div class="cta cta-1">
+
+                <div class="">
+                    <h1>Virtual Style Consultation</h1>
+                    <p>
+                        Looking for a specific event or not sure which size to order?  From the cut of a neckline to the sweep of a skirt, our stylist recommends products personalized for you.
+                    </p>
+                </div>
+                <div class="cta-actions">
+
+                    <button id="cta-1" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time forty-five">
+                        <img src="{{ 'clock.png' |  asset_img_url }}">
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="cta cta-3">
+                <div class="">
+
+                    <h2>Virtual Bridal Appointment</h2>
+                    <p>
+                        Browse fuss-free styles designed to make you look and feel beautiful from the comfort of your home.  You may choose to work one-on-one with our stylist or extend the invitation to have family and friends join you for a virtual bridal salon experience.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+
+                    <button id="cta-3" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time forty-five">
+                        <img src="{{ 'clock.png' |  asset_img_url }}">
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cta-row">
+
+            <div class="cta cta-2">
+                <div class="">
+
+                    <h2>Virtual Hemming Consultation</h2>
+                    <p>
+                        This consultation works in tandem with our hemming service.  <br>We guide you on what hem length will look best and how to pin.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+
+                    <button id="cta-2" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time forty-five">
+                        <img src="{{ 'clock.png' |  asset_img_url }}">
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="cta cta-7">
+                <div class="">
+
+                    <h2>Special Order Inquiry</h2>
+                    <p>
+                        Found THE dress, but we don't have your size or color needed? Let us know and we can look into our Special Order option. Special Orders can take up to 10 weeks and there is an up-charge to the original price of the dress for the service.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+
+                    <button id="cta-7" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time forty-five">
+                        <img src="{{ 'clock.png' |  asset_img_url }}">
+                    </span>
+                </div>
+
+            </div>
+
+            <!--<div class="cta va-follow-up">
+
+                <p>
+
+                    After your appointment, we'll email you with styles browsed as well as pieces you may also love.  All consultations are complimentary, and there is no pressure to buy.
+
+                </p>
+
+            </div>-->
+        </div>
+
+        <div class="cta-row">
+
+            <!--<div class="cta cta-6">
+                <div class="">
+
+                    <h2>Virtual Sample Sale</h2>
+                    <p>
+                        Shop our virtual One of a Kind Piece Sample Sale in select sizes (Sizes available: 0-8, 8P, 18Q, KIDS 6T -8T). These pieces are sold as is.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+
+                    <button id="cta-6" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time thirty">
+                        <img src="/pub/media/CMS/virtualappointments/clock.png">
+                    </span>
+                </div>
+
+            </div>-->
+
+            <!--<div class="cta cta-4">
+                <div class="">
+
+                    <h2>In-Person Sample Sale</h2>
+                    <p>
+                        Shop our in-person, one-of-a-kind piece Sample Sale. (Select Sizes Available: 0-8, 8P, 18Q, KIDS 6T-8T). These pieces are sold as is. This is a non try-on event.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+
+                    <button id="cta-4" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time sixty">
+                        <img src="/pub/media/CMS/virtualappointments/clock.png">
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cta-row">-->
+
+            <div class="cta cta-5">
+                <div class="">
+
+                    <h2>After Purchase Consultation</h2>
+                    <p>
+                        An after-purchase consultation offers you a one-on-one virtual experience with our customer care.  Receive expert tips on how to store and care for your dress, what undergarments are best, and more.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+
+                    <button id="cta-5" class="va-btn cursor-pointer">Book Now</button>
+                    <span class="va-time forty-five">
+                        <img src="{{ 'clock.png' |  asset_img_url }}">
+                    </span>
+                </div>
+
+            </div>
+
+        <!--<div class="cta-row">-->
+            <div class="cta va-follow-up">
+                <div>
+                    <p>
+                        After your appointment, we'll email you with styles browsed as well as pieces you may also love.  All consultations are complimentary, and there is no pressure to buy.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <!--<div class="saia-widget-container"></div>
+        <script id="saia-mtm-integration" async src="https://mtm-widget.3dlook.me/integration.js" data-public-key="NjM2MQ:1qLV0b:8VFTpW_593yFMYcW3KqeacbrCuw"/>-->
+        <a href="mailto:customercare@tadashishoji.com">Email Customer Care</a>
+        <a href="{{ shop.url }}/faq#anchor-virtual-appointments" target="_blank">Frequently Asked Questions</a>
+    </footer>
+
+
+</div>
+
+
+{% comment %} <?php
+
+/**
+ * NOTE: loading this external script and then calling classes/methods on it is pretty tricky due to anonymous define() calls present in script, after requireJS has already been loaded
+ *  - the trick here is to load the external script via require.config(), and then call require() passing in dependencies, BUT DO NOT call library within require()
+ *     -- require() should be empty, and library calls should be placed OUTSIDE require() -- (which obviously means using vanilla JS instead of jQuery)
+ *       --> I don't know WHY this works... but it does
+ *
+ * ADDITIONAL INFO:
+ *  - calling library from inside require() makes library class methods inaccessible (e.g. Calendly.showPopupWidget())
+ *  - excluding the empty require() call makes library classes inaccessible (e.g. Calendly)
+ *
+ */
+?>
+
+<?php /**
+ * leaving this here to be searchable for easy reference next time I encounter this type of issue
+ * - also why I'm leaving JS code below instead of modularizing to separate JS file
+ */ ?> {% endcomment %}
+
+{% comment %} <script src="https://calendly.com/assets/external/widget.js" type="text/javascript" async></script> {% endcomment %}
+
+<script>
+    // require.config({
+    //     map: {
+    //         '*': {
+    //             'calendly':  'https://calendly.com/assets/external/widget.js'
+    //         }
+    //     }
+    // });
+
+    // require(['calendly'], function(Calendly){
+
+    // });
+
+    document.getElementById('cta-1').addEventListener('click', function(){
+
+        console.log('=== checking Calendly object...');
+        console.log(Calendly);
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/virtual-style-consultation'
+        );
+        return false;
+
+    });
+    // window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/tadashishoji/virtual-style-consultation', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: false }); }
+
+    document.getElementById('cta-2').addEventListener('click', function(){
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/virtual-hemming-consultation'
+        );
+        return false;
+
+    });
+    /*document.getElementById('cta-4').addEventListener('click', function(){
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/one-of-a-kind-sample-sale-in-person'
+        );
+        return false;
+
+    });*/
+    document.getElementById('cta-3').addEventListener('click', function(){
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/virtual-bridal-appointment'
+        );
+        return false;
+
+    });
+    document.getElementById('cta-5').addEventListener('click', function(){
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/after-purchase-consultation'
+        );
+        return false;
+
+    });
+    /*document.getElementById('cta-6').addEventListener('click', function(){
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/virtual-collection-appointment-sample-pieces'
+        );
+        return false;
+
+    });*/
+    document.getElementById('cta-7').addEventListener('click', function(){
+
+        Calendly.showPopupWidget(
+            'https://calendly.com/tadashishoji/special-order'
+        );
+        return false;
+
+    });
+
+
+    /** NEW 7/18/23: calling methods automatically on page load based on URL param
+     * URL params are the following:
+     * - url_key => 'special-order', 'after-purchase-consultation', etc  (MUST BE VALID)
+     * - cta_id => 'cta-1', 'cta-2', etc
+     */
+    window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search),
+            urlKey = urlParams.get('url_key'),
+            ctaId = urlParams.get('cta_id');
+
+        if (urlKey) {
+            var url = 'https://calendly.com/tadashishoji/'+urlKey;
+            Calendly.showPopupWidget(
+                url
+            );
+        } else if (ctaId) {
+            document.getElementById(ctaId).click();
+        }
+
+    };
+
+    /** NEW 10/15/24: optimizing Meta integration, including adding support for CAPI */
+    // require(['jquery'], function($) {
+
+        // $(document).ready(function(){
+
+        //     // TODO: make dynamic based on configuration
+        //     var isApiEventEnabled = true;
+
+        //     if (isApiEventEnabled) {
+
+        //         var eventName = 'invitee_scheduling_page',
+        //             eventData = {},
+        //             eventId = generateEventId(eventName);
+
+
+        //         /** PIXEL (client side) */
+        //         /** NOTE: this is handled by GTM
+        //          *  - tag: "FB Pixel - VA landing page"
+        //          *  - trigger: "Appointments - VA landing page"
+        //          */
+
+
+        //         /** CAPI (server side) */
+
+        //         fireConversionsApiEvent(eventName, eventData, eventId);
+
+        //         /** adapted from apptrian code.phtml JS */
+        //         function fireConversionsApiEvent(eventName, eventData, eventId) {
+        //             var apiUrl = '<?= $block->getBaseUrl(); ?>tadashi_facebookpixel/capi/index';
+
+        //             $.ajax({
+        //                 url: apiUrl,
+        //                 data: {
+        //                     eventName: eventName,
+        //                     eventData: eventData,
+        //                     eventId: eventId,
+        //                     url: window.location.href
+        //                     // userData: userData // seeing if we can exclude this...
+        //                 }
+        //             })
+
+        //         }
+
+        //         /** copied from apptrian code.phtml JS */
+
+        //         function generateEventId(eName) {
+        //             var uCookie = document.cookie;
+        //             var uHash = stringToHash(uCookie);
+        //             var url = window.location.href;
+        //             var urlHash = stringToHash(url);
+
+        //             function getTimeStamp() {
+        //                 if (!Date.now) {
+        //                     Date.now = function () {
+        //                         return new Date().getTime();
+        //                     }
+        //                 }
+
+        //                 return Date.now();
+        //             }
+
+        //             var timestamp = String(getTimeStamp());
+
+        //             return eName + uHash + urlHash + timestamp;
+        //         }
+
+        //         function stringToHash(string) {
+        //             var hash = 0;
+
+        //             if (string.length == 0) return hash;
+
+        //             for (i = 0; i < string.length; i++) {
+        //                 let char = string.charCodeAt(i);
+        //                 hash = ((hash << 5) - hash) + char;
+        //                 hash = hash & hash;
+        //             }
+
+        //             return String(hash);
+        //         }
+
+        //     }
+
+        // });
+
+    // });
+
+
+</script>
