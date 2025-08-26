@@ -1,0 +1,52 @@
+<head>
+    {{ 'page-connect.css' | asset_url | stylesheet_tag }}
+</head>
+
+<div class="connect">
+    <div class="connect-form-header">
+        <h1>STAY IN TOUCH</h1>
+        {{ shop.phone }}
+    </div>
+    <div class="clmn clmn-primary">
+        <h2 style="font-weight: bold; font-size: 2em;">EMAIL</h2>
+        <p class="!leading-7">Be the first to know about our latest arrivals, exclusive promotions &amp; more. <span style="font-weight: bold; text-transform: uppercase;">PLUS, Take 10% off your next order</span></p>
+        <form id="newsletter-popup-validate-detail" class="form subscribe" action="/newsletter/subscriber/new" method="post"><!-- <div class="subcribe-box newsletter-new clearfix"> --> <!-- <div class="field newsletter input-box"> --> <!-- <div class="control"> --> <input id="newsletter-popup" class="input-text" name="email" type="email" placeholder="EMAIL ADDRESS" required=""> <!-- </div> --> <!-- </div> --> <!-- <div class="actions"> --> <button class="action subscribe" title="SUBSCRIBE" type="submit"> SIGN UP </button> <!-- </div> --> <!-- </div> --></form>
+        <div class="fine-print">
+            <p>Offer is subject to change without notice.</p>
+            <p>Will be used in accordance with our Privacy Policy.</p>
+        </div>
+    </div>
+    <div class="clmn clmn-secondary">
+        <h2 style="font-weight: bold; font-size: 2em;">MOBILE</h2>
+        <p>Sign up for text alerts &amp; receive an exclusive offer</p>
+        <div class="connect-attv-cta">
+            Text <span>TADASHI</span> to <span>1-833-217-4605</span>
+        </div>
+        <div class="connect-attv-disclaimer">
+            <p>By signing up via text, you agree to receive automated marketing text messages from Tadashi Shoji at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies. Msg &amp; data rates may apply. View terms (attn.tv/tadashishoji/terms.html) &amp; Privacy (www.tadashishoji.com/privacy-policy)</p>
+        </div>
+    </div>
+
+    <div class="app-cta container max-w-full">
+
+        <header>
+            <h2>App Download</h2>
+            <h3>Effortless elegance at your fingertips</h3>
+        </header>
+
+        <div class="app-badge apple">
+            <a href="https://apps.apple.com/us/app/tadashi-shoji/id6547857570">
+                <img alt="download on the Apple App store" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/app_store__Apple.svg"/>
+            </a>
+        </div>
+        <div class="app-badge google">
+            <a href="https://play.google.com/store/apps/details?id=com.TadashiShoji.android">
+                <img alt="download on the Google Play store" src="https://cdn.shopify.com/s/files/1/0939/5585/0545/files/app_store__Google.webp"/>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div style="margin-top: 20px;"><a class="privacy" href="{{shop.url}}/privacy-policy" target="_blank" rel="noopener"> PRIVACY POLICY </a></div>
+</div>
