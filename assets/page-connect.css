@@ -140,7 +140,3 @@
 	 letter-spacing: 1px;
 	 font-weight: bold;
 }
- 
-input::-webkit-input-placeholder {
-    color: #c2c2c2;
-}

@@ -1,8 +1,8 @@
 <head>
-
-    <script src="//api.getcandid.com/scripts/wall.js" crossorigin="anonymous"></script>
-    <script src="//api.getcandid.com/scripts/wall-isotope-packery.pkgd.min.js" crossorigin="anonymous"></script>
-    <script src="//api.getcandid.com/scripts/widget.js" crossorigin="anonymous"></script>
+    {{ 'page-gallery.css' |  asset_url |  stylesheet_tag }}
+    <script src="//api.getcandid.com/scripts/wall.js"></script>
+    <script src="//api.getcandid.com/scripts/wall-isotope-packery.pkgd.min.js"></script>
+    <script src="//api.getcandid.com/scripts/widget.js"></script>
 
 </head>
 
@@ -21,7 +21,7 @@
     </a>
 </div>
 
-<div class="text-center margin-top-2x margin-bottom-1x color-medium-gray candid-social-terms">
+<div class="text-center margin-top-2x margin-bottom-1x mt-8 mb-4 color-medium-gray candid-social-terms">
     <a href="mytadashishoji-terms-of-use" class="color-medium-gray">
         #MYTADASHISHOJI TERMS OF USE
     </a>
@@ -53,7 +53,7 @@
 
 $(document).ready(function(){
     
-        $.bridget('isotope', packery);
+        // $.bridget('isotope', packery);
         candid.wall('#candid-container', {
             id: 'cfa83003-4555-48e1-88dc-16329f2458b2',
             delimiters: ['[[', ']]'],

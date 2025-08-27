@@ -46,9 +46,11 @@
     
   </head>
 
-  {% assign _template = template | split: '.' %}
+  {% assign _template = template | replace: '.', '-' %}
+  {% assign _t = _template | split: '-' %}
+  {% assign pageType = _t[0] %}
 
-  <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }} {{template}}" data-attribute-pagetype="{{_template[0]}}">
+  <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }} {{_template}}" data-attribute-pagetype="{{pageType}}">
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}

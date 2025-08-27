@@ -192,6 +192,7 @@ body[data-attribute-pagetype="page"] main {
     /* margin: 0 0.5em; */
     margin: 0 0.8em;
     /* margin: 0 1em; */
+    font-size: 1rem;
 }
 
 /* ****** /new ****** */
@@ -284,6 +285,28 @@ body[data-attribute-pagetype="page"] {
 	}
 	 .hide-mobile {
 		 display: none;
+	}
+}
+ 
+
+input::-webkit-input-placeholder {
+    color: #c2c2c2;
+}
+
+/* NOTE: this mimics TSM1 design -- adding here to match branding -- but of course may want to adjust/remove if desired */
+
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=datetime], input[type=month], input[type=number], input[type=tel], input[type=url], input[type=week] {
+	 height: 28px;
+	 padding: .3em .6em;
+	 border: 1px solid #eaeaea;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 /* font-weight: 300; */
+	 color: #747474;
+	 font-size: .8em;
+}
+ @media screen and (max-width: 767px) {
+	 input[type=text], input[type=email], input[type=password], input[type=date], input[type=datetime], input[type=month], input[type=number], input[type=tel], input[type=url], input[type=week] {
+		 font-size: 1.1em;
 	}
 }
  
