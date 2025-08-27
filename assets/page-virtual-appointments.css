@@ -1,4 +1,4 @@
-.cms-virtual-appointment-confirmation div.virtual-app-form-container {
+div.virtual-app-form-container {
 	 padding: 0;
 }
  div.virtual-app-form-container {
@@ -6,6 +6,7 @@
 	 margin: 0 auto;
 	 background-color: #FAF7F0;
 	 padding-bottom: .5em;
+     font-size: 1rem;
 }
  div.virtual-app-form-container * {
 	 line-height: normal;
@@ -147,11 +148,11 @@
 	 height: 508px;
 }
  div.virtual-app-form-container div.confirmation-container > div.--left {
-	 background: url('/pub/media/CMS/virtualappointments/VA-confirmation-background--left.png') no-repeat right;
+	 background: url('https://cdn.shopify.com/s/files/1/0939/5585/0545/files/VA-confirmation-background--left.png') no-repeat right;
 	 width: 40%;
 }
  div.virtual-app-form-container div.confirmation-container > div.--right {
-	 background: url('/pub/media/CMS/virtualappointments/VA-confirmation-background--right.png') no-repeat;
+	 background: url('https://cdn.shopify.com/s/files/1/0939/5585/0545/files/VA-confirmation-background--right.png') no-repeat;
 	 width: 60%;
 }
  @media screen and (max-width: 1211px) {
@@ -209,7 +210,7 @@
 		 min-height: 600px;
 	}
 	 div.virtual-app-form-container div.confirmation-container > div.--left {
-		 background: url('/pub/media/CMS/virtualappointments/VA-photo.png') no-repeat center;
+		 background: url('https://cdn.shopify.com/s/files/1/0939/5585/0545/files/VA-header-image.png') no-repeat center;
 		 aspect-ratio: 1;
 		 width: 100%;
 		 height: 100%;

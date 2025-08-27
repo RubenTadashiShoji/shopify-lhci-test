@@ -1,0 +1,162 @@
+<head>
+    <meta name="robots" content="NOINDEX,NOFOLLOW" />
+    {{ 'page-virtual-appointments.css' | asset_url |  stylesheet_tag }}
+</head>
+
+<div class="virtual-app-form-container">
+    <div class="confirmation-container">
+        <div class="--left"></div>
+        <div class="--right">
+            <div class="confirmation-message">
+                <h2>Thank you for scheduling your appointment</h2>
+                <h3>A calendar invitation has been sent to your email address.</h3>
+                <div class="event-details">
+
+                    <!-- event name -->
+                    <h3 id='eventName' class="event-name"></h3>
+
+                    <!-- event time frame -->
+                    <p id="eventTime" class="event-time"></p>
+
+                    <!-- time zone -->
+                    <!--<p class="event-timezone"></p>-->
+
+                    <!-- additional messages -->
+                    <p id="eventAdditional" class="event-additional"></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--
+<script>
+
+    /** NEW 10/15/24: optimizing Meta integration, including adding support for CAPI */
+    require(['jquery'], function($) {
+
+        $(document).ready(function(){
+
+            // TODO: make dynamic based on configuration
+            var isApiEventEnabled = true;
+
+            if (isApiEventEnabled) {
+
+                var eventName = 'invitee_meeting_scheduled',
+                    eventData = {},
+                    eventId = generateEventId(eventName);
+
+
+                /** PIXEL (client side) */
+                /** NOTE: this is handled by Calendly, so nothing needed to do here */
+
+
+                /** CAPI (server side) */
+
+                fireConversionsApiEvent(eventName, eventData, eventId);
+
+                /** adapted from apptrian code.phtml JS */
+                function fireConversionsApiEvent(eventName, eventData, eventId) {
+                    var apiUrl = '<?= $block->getBaseUrl(); ?>tadashi_facebookpixel/capi/index';
+
+                    $.ajax({
+                        url: apiUrl,
+                        data: {
+                            eventName: eventName,
+                            eventData: eventData,
+                            eventId: eventId,
+                            url: window.location.href
+                            // userData: userData // seeing if we can exclude this...
+                        }
+                    })
+
+                }
+
+                /** copied from apptrian code.phtml JS */
+
+                function generateEventId(eName) {
+                    var uCookie = document.cookie;
+                    var uHash = stringToHash(uCookie);
+                    var url = window.location.href;
+                    var urlHash = stringToHash(url);
+
+                    function getTimeStamp() {
+                        if (!Date.now) {
+                            Date.now = function () {
+                                return new Date().getTime();
+                            }
+                        }
+
+                        return Date.now();
+                    }
+
+                    var timestamp = String(getTimeStamp());
+
+                    return eName + uHash + urlHash + timestamp;
+                }
+
+                function stringToHash(string) {
+                    var hash = 0;
+
+                    if (string.length == 0) return hash;
+
+                    for (i = 0; i < string.length; i++) {
+                        let char = string.charCodeAt(i);
+                        hash = ((hash << 5) - hash) + char;
+                        hash = hash & hash;
+                    }
+
+                    return String(hash);
+                }
+
+            }
+
+        });
+
+    });
+
+
+</script>
+-->
+
+</div>
+
+
+<script>
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    var eventName = urlParams.get('event_type_name'),
+        eventStartTime = decodeURIComponent(urlParams.get('event_start_time')),
+        eventEndTime = decodeURIComponent(urlParams.get('event_end_time')),
+        inviteeFullName = urlParams.get('invitee_full_name'),
+        inviteeEmail = urlParams.get('invitee_email');
+
+    var _timeInfo = '',
+        _dayInfo = '';
+
+    if (eventStartTime) {
+        
+        _timeInfo += new Date(eventStartTime).toLocaleTimeString(undefined, {timeStyle: 'short'}).toLowerCase().replace(/\s/g, '');
+        
+        _dayInfo += new Intl.DateTimeFormat('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(eventStartTime));
+    
+    }
+    if (eventEndTime) {
+        
+        _timeInfo += ' - ';
+
+        _timeInfo += new Date(eventEndTime).toLocaleTimeString(undefined, {timeStyle: 'short'}).toLowerCase().replace(/\s/g, '');
+        
+        if (_dayInfo == '') {
+            _dayInfo = new Intl.DateTimeFormat('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(eventEndTime));
+        }
+
+    }
+
+    var eventTimeString = _timeInfo && _dayInfo ? _timeInfo + '<br>' + _dayInfo : _timeInfo + _dayInfo;
+
+    document.getElementById('eventName').innerHTML = eventName;
+    document.getElementById('eventTime').innerHTML = eventTimeString;
+
+</script>
