@@ -12,7 +12,7 @@ h5{font-size: .83em;}
 h6{font-size: .75em; margin: 2.33em 0;}
 
 p {margin: 1em 0;}
-a {text-decoration: underline;}
+a:not(.social-link) {text-decoration: underline;}
 
 
 table {
@@ -264,7 +264,7 @@ body[data-attribute-pagetype="page"] {
  body[data-attribute-pagetype="page"] img {
 	 margin: 0 auto;
 }
- body[data-attribute-pagetype="page"] #maincontent a {
+ body[data-attribute-pagetype="page"] #maincontent a:not(.social-link) {
 	 text-decoration: underline;
 }
  body[data-attribute-pagetype="page"] a {
