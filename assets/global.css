@@ -310,3 +310,10 @@ input[type=text], input[type=email], input[type=password], input[type=date], inp
 	}
 }
  
+
+
+
+/* additional utility classes used by admin pages but not repo pages (application.css keeps auto-removing them) */
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
