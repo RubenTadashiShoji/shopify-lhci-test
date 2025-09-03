@@ -2,7 +2,8 @@
     "ci": {
       "collect": {
         "url": [
-          "https://ruben-theme.myshopify.com/"
+          "https://tadashishoji.myshopify.com/",
+          "https://tadashishoji.myshopify.com/pages/about-us"
         ],
         "numberOfRuns": 1
       },
