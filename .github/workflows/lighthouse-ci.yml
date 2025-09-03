@@ -21,5 +21,5 @@ jobs:
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli
 
-      - name: Run Lighthouse CI
-        run: lhci autorun || echo "Lighthouse completed with warnings"
+      - name: Run Lighthouse CI with config
+        run: lhci autorun --config=lighthouserc.json || echo "Lighthouse completed with warnings"

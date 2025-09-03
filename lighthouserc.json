@@ -1,0 +1,21 @@
+{
+    "ci": {
+      "collect": {
+        "url": [
+          "https://ruben-theme.myshopify.com/"
+        ],
+        "numberOfRuns": 1
+      },
+      "assert": {
+        "assertions": {
+          "categories:performance": "warn",
+          "categories:accessibility": "warn",
+          "categories:seo": "warn"
+        }
+      },
+      "upload": {
+        "target": "temporary-public-storage"
+      }
+    }
+  }
+  
