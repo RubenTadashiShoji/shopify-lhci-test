@@ -2,8 +2,7 @@
     "ci": {
       "collect": {
         "url": [
-          "https://tadashishoji.myshopify.com/",
-          "https://tadashishoji.myshopify.com/pages/about-us"
+            "https://ruben-theme.myshopify.com/pages/virtual-appointments"
         ],
         "numberOfRuns": 1
       },

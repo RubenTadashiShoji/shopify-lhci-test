@@ -2,9 +2,13 @@ name: Lighthouse CI Demo
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main
+      - lhci-test
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main
+      - lhci-test
 
 jobs:
   lhci:
