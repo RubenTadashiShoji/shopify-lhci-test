@@ -2,7 +2,7 @@
     "ci": {
       "collect": {
         "url": [
-            "https://ruben-theme.myshopify.com/pages/virtual-appointments"
+            "https://ruben-theme.myshopify.com/pages/virtual-appointments?preview_theme_id=145970331804"
         ],
         "numberOfRuns": 1
       },
