@@ -82,7 +82,7 @@
               "name": "t:names.menu",
               "settings": {
                 "menu": "footer",
-                "heading": "Shop",
+                "heading": "NEED ASSISTANCE",
                 "menu_spacing": 8,
                 "show_as_accordion": false,
                 "accordion_icon": "caret",
@@ -279,7 +279,5 @@
       }
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["footer"]
 }
