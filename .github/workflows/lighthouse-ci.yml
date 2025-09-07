@@ -4,11 +4,12 @@ on:
   push:
     branches: 
       - main
-      - lhci-test
+      - feature/footer-update
   pull_request:
     branches: 
       - main
-      - lhci-test
+      - feature/footer-update
+  workflow_dispatch:   # lets you run it manually in Actions tab
 
 jobs:
   lhci:
